@@ -9,10 +9,10 @@
     "name": "casper"
   },
   "urls": {
-    "site": "https://igovsol.github.io/blog",
-    "hubpress": "https://igovsol.github.io/blog",
-    "theme": "//igovsol.github.io/blog/themes/casper",
-    "images": "https://igovsol.github.io/blog/images"
+    "site": "http://blog",
+    "hubpress": "https://blog.igovsol.com",
+    "theme": "//blog/themes/casper",
+    "images": "http://blog/images"
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",
