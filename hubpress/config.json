@@ -9,7 +9,7 @@
   },
   "urls": {
     "site": "https://igovsol.github.io/blog",
-    "hubpress": "https://blog.igovsol.com/blog",
+    "hubpress": "https://igovsol.github.io/blog",
     "theme": "//igovsol.github.io/blog/themes/casper",
     "images": "https://igovsol.github.io/blog/images"
   },
