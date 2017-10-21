@@ -9,10 +9,10 @@
     "name": "roon"
   },
   "urls": {
-    "site": "https://blog.igovsol.com",
+    "site": "http://blog.igovsol.com",
     "hubpress": "https://blog.igovsol.com",
-    "theme": "//blog.igovsol.com/themes/casper",
-    "images": "https://blog.igovsol.com/images"
+    "theme": "//blog.igovsol.com/themes/roon",
+    "images": "http://blog.igovsol.com/images"
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",
