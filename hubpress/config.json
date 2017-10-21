@@ -3,16 +3,16 @@
     "username": "igovsol",
     "repositoryName": "blog",
     "branch": "gh-pages",
-    "cname": "blog"
+    "cname": "blog.igovsol.com"
   },
   "theme": {
     "name": "casper"
   },
   "urls": {
-    "site": "http://blog",
+    "site": "https://blog.igovsol.com",
     "hubpress": "https://blog.igovsol.com",
-    "theme": "//blog/themes/casper",
-    "images": "http://blog/images"
+    "theme": "//blog.igovsol.com/themes/casper",
+    "images": "https://blog.igovsol.com/images"
   },
   "initialisationConfigComponent": {
     "name": "initialise-configuration",
