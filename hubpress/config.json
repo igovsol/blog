@@ -6,12 +6,12 @@
     "cname": "blog.igovsol.com"
   },
   "theme": {
-    "name": "saga"
+    "name": "uno-zen"
   },
   "urls": {
     "site": "http://blog.igovsol.com",
     "hubpress": "https://blog.igovsol.com",
-    "theme": "//blog.igovsol.com/themes/ichi",
+    "theme": "//blog.igovsol.com/themes/saga",
     "images": "http://blog.igovsol.com/images"
   },
   "initialisationConfigComponent": {
