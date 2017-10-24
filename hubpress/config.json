@@ -6,12 +6,12 @@
     "cname": "blog.igovsol.com"
   },
   "theme": {
-    "name": "ghostium"
+    "name": "ichi"
   },
   "urls": {
     "site": "http://blog.igovsol.com",
     "hubpress": "https://blog.igovsol.com",
-    "theme": "//blog.igovsol.com/themes/roon",
+    "theme": "//blog.igovsol.com/themes/ghostium",
     "images": "http://blog.igovsol.com/images"
   },
   "initialisationConfigComponent": {
