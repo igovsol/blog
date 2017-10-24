@@ -1,12 +1,12 @@
 /* Link colour */
 a {
-    color: #00aaff;
+    color: #428bca;
 }
 
 /* Border at the top of the page */
 body>header,
 body.noimage {
-    border-color: #00aaff;
+    border-color: #428bca;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -102,7 +102,7 @@ body.serif article>menu #btn_comment span {
     color: #b168cd
 }
 .highlight .l {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .n {
     color: #21272d
@@ -171,7 +171,7 @@ body.serif article>menu #btn_comment span {
     color: #46ad55
 }
 .highlight .m {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .s {
     color: #46ad55
@@ -186,7 +186,7 @@ body.serif article>menu #btn_comment span {
     color: #deb328
 }
 .highlight .no {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .nd {
     color: #51bac8
@@ -225,16 +225,16 @@ body.serif article>menu #btn_comment span {
     color: #4d4d4c
 }
 .highlight .mf {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .mh {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .mi {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .mo {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .sb {
     color: #46ad55
@@ -249,13 +249,13 @@ body.serif article>menu #btn_comment span {
     color: #46ad55
 }
 .highlight .se {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .sh {
     color: #46ad55
 }
 .highlight .si {
-    color: #00aaff
+    color: #428bca
 }
 .highlight .sx {
     color: #46ad55
@@ -282,7 +282,7 @@ body.serif article>menu #btn_comment span {
     color: #c82829
 }
 .highlight .il {
-    color: #00aaff
+    color: #428bca
 }
 html, body {
     height: 100%;
@@ -311,7 +311,7 @@ a {
     transition-duration: 0.2s
 }
 a:hover {
-    color: #21272d
+    color: #4a9de5
 }
 a:active {
     outline: none
@@ -413,7 +413,7 @@ article #home_link {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 article #home_link:hover {
-    color: #21272d;
+    color: #4a9de5;
     background-color: #ededee
 }
 article time, article time a {
@@ -880,7 +880,7 @@ body.user article .readmore {
     transition-duration: 0.5s
 }
 body.user article .readmore:hover {
-    color: #21272d
+    color: #4a9de5
 }
 body.user article:hover .readmore {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -951,7 +951,7 @@ body.user>#load_more {
     text-overflow: ellipsis
 }
 #post_nav a:hover {
-    color: #21272d
+    color: #4a9de5
 }
 #post_nav a:hover span {
     color: #909396
