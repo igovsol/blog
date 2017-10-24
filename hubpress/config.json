@@ -6,12 +6,12 @@
     "cname": "blog.igovsol.com"
   },
   "theme": {
-    "name": "the-shell"
+    "name": "roon"
   },
   "urls": {
     "site": "http://blog.igovsol.com",
     "hubpress": "https://blog.igovsol.com",
-    "theme": "//blog.igovsol.com/themes/uno-zen",
+    "theme": "//blog.igovsol.com/themes/the-shell",
     "images": "http://blog.igovsol.com/images"
   },
   "initialisationConfigComponent": {
