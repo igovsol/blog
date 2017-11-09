@@ -8,13 +8,13 @@
 
 
 
-Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog].   
+Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog , window="_blank"].   
 
 In a nutshell - it is as awesome as ever, and this release has much to boast.  Neo4j Enterprise is still free under its open source license, however you may have noticed that you can no longer build the enterprise package binary from the source code or download the open source Enterprise package binary from dist.neo4j.org. Furthermore, if you use docker, you may have noticed https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70[you must now accept a 'commercial agreement’ before proceeding, window="_blank"].  
 
 Neo4j Inc could attempt to take Neo4j closed source from its current point quite easily, but with ambitions of an IPO - it would be extremely risky maneuver that if backfired would be disastrous for Neo4j Inc’s business side.  
 
-As a reference, look no further than mysql , or rather what we now call mariaDB - the more popular fork of MySQL, and you http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/[can see what could happen].
+As a reference, look no further than mysql , or rather what we now call mariaDB - the more popular fork of MySQL, and you http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/[can see what could happen , window="_blank"].
 
 It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged distributions with the AGPLv3 license. Are they testing the waters with this behavior?  I don’t know, but as a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me.  
 
@@ -37,7 +37,7 @@ That is one way to say it.  Of course, they could have easily just provided a Ne
 
 Look for yourself:  
 
-https://github.com/neo4j/neo4j/blob/3.2/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.2 release code] : The sslPolicy initialized in the code.
+https://github.com/neo4j/neo4j/blob/3.2/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.2 release code , window="_blank"] : The sslPolicy initialized in the code.
 
 [source,java]
 ----
@@ -51,7 +51,7 @@ HazelcastClientConnector( Config config, LogProvider logProvider, SslPolicy sslP
     }
 ----    
     
-https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.3 release code]  :  The sslPolicy initialization has disapeared .
+https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.3 release code , window="_blank"]  :  The sslPolicy initialization has disapeared .
     
 [source,java]
 ----
