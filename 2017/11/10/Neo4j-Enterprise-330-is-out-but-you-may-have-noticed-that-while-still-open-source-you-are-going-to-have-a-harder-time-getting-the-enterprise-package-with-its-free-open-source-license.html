@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license...</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510355129470" />
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://igovsol.com/vendor/bootstrap/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/font-awesome/css/font-awesome.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/animate/animate.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/owl.carousel/assets/owl.carousel.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/magnific-popup/magnific-popup.min.css">
+
+    		<!-- Theme CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-elements.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-blog.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-shop.css">
+   
+
+    		<!-- Current Page CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/settings.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/layers.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/navigation.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/circle-flip-slideshow/css/component.css">
+    
+    
+
+    		<!-- Skin CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/skins/skin-igov.css">
+
+    		<!-- Theme Custom CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/custom.css">
+
+    <link rel="canonical" href="http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="iGov Inc Neo4j Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license..." />
+    <meta property="og:description" content="Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the 3.3.0 release changelog Neo4j Enterprise is still free under its open source AGPLv3 license, however you may have noticed that you can no longer build the" />
+    <meta property="og:url" content="http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html" />
+    <meta property="article:published_time" content="2017-11-10T00:00:00.000Z" />
+    <meta property="article:tag" content="Neo4j" />
+    <meta property="article:tag" content="GraphDatabase" />
+    <meta property="article:tag" content="Neo4j Enterprise" />
+    <meta property="article:tag" content="open source" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license..." />
+    <meta name="twitter:description" content="Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the 3.3.0 release changelog Neo4j Enterprise is still free under its open source AGPLv3 license, however you may have noticed that you can no longer build the" />
+    <meta name="twitter:url" content="http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "iGov Inc Neo4j Blog",
+    "author": {
+        "@type": "Person",
+        "name": "John Mark",
+        "image": "https://avatars0.githubusercontent.com/u/5272174?v=4",
+        "url": "http://blog.igovsol.com/author/jmsuhy/"
+    },
+    "headline": "Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license...",
+    "url": "http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html",
+    "datePublished": "2017-11-10T00:00:00.000Z",
+    "keywords": "Neo4j, GraphDatabase, Neo4j Enterprise, open source",
+    "description": "Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the 3.3.0 release changelog Neo4j Enterprise is still free under its open source AGPLv3 license, however you may have noticed that you can no longer build the"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="iGov Inc Neo4j Blog" href="http://blog.igovsol.com/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body class="post-template tag-Neo4j tag-Graph-Database tag-Neo4j-Enterprise tag-open-source  noimage">
+
+    
+
+
+    <article role="main" class="">
+        <header>
+            <a href="http://blog.igovsol.com" id="home_link">«</a>
+            <div class="meta"><time datetime="2017-11-10"><a href="http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html">November 10, 2017</a></time> <span class="count" id="js-reading-time"></span></div>
+            <h1>Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license...</h1>
+        </header>
+
+        <div class="text" id="js-post-content">
+            <div class="paragraph">
+<p>Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the <a href="https://neo4j.com/release-notes/neo4j-3-3-0/" target="_blank">3.3.0 release changelog</a></p>
+</div>
+<div class="paragraph">
+<p>Neo4j Enterprise is still free under its open source AGPLv3 license, however you may have noticed that you can no longer build the enterprise package binary from the source code or download enterprise package binary with it&#8217;s AGPLv3 license from dist.neo4j.org. Furthermore, if you use docker, you may have noticed <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.</p>
+</div>
+<div class="paragraph">
+<p>Neo4j Enterprise  'binaries’ - are simply the packaged Neo4j distributions you download and run on your computer or server.  For the 3.3.0 release their file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the Linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package.</p>
+</div>
+<div class="paragraph">
+<p>Why has Neo4j made it harder to access the open source enterprise binaries?</p>
+</div>
+<div class="paragraph">
+<p>If they are going to take the  trouble to make it more inaccessible, why not just take Neo4j closed source before releasing 3.3.0?</p>
+</div>
+<div class="paragraph">
+<p>Only Neo4j Inc can answer those questions, and I feel they have some explaining to do to the open source community.</p>
+</div>
+<div class="paragraph">
+<p>With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j closed source.  It could backfire and be disastrous.</p>
+</div>
+<div class="paragraph">
+<p>As a reference, look no further than mySQL , or rather what we now call mariaDB - the more popular fork of MySQL, and <a href="http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/" target="_blank">can see what could happen</a>.</p>
+</div>
+<div class="paragraph">
+<p>It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the AGPLv3 license. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me.</p>
+</div>
+<div class="paragraph">
+<p>Many federal  agencies have already invested in the adoption and use of Neo4j Enterprise using it’s free Enterprise license.    Luckily, we happen to be Neo4j developers and these moves simply don’t affect us or our federal clients at this point.  We have been building the Neo4j Enterprise binaries ourselves for some time.</p>
+</div>
+<div class="paragraph">
+<p>Back to the core of this post.   So what has Neo4j Inc done to limit your access to official Neo4j Enterprise binaries under it’s open source license?</p>
+</div>
+<div class="paragraph">
+<p><strong>Action 1</strong>:  The enterprise packaging build instructions were removed from the code base.   A few weeks ago, the enterprise packaging ‘instructions’ were removed from the code base.  Until the 3.3.0 release,  anyone could have checked out the Neo4j source code from github, and run a few simple commands to build the free Neo4j Enterprise binaries.   That’s not the case anymore.  If you run the same commands that worked before,  you will notice only community binaries are built.  Who really uses Neo4j Community Edition when the they can use Enterprise edition for free?</p>
+</div>
+<div class="paragraph">
+<p>The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution download, much like the instructions you get with your furniture you get at IKEA.    All the artifacts that are used to build the neo4j-enterprise binary are still there and open source, but the instructions explaining how to put together the neo4j-enterprise binary you download have disappeared.</p>
+</div>
+<div class="paragraph">
+<p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into their distribution site binary downloads that are used for docker and direct downloads of Neo4j Enterprise.    Many people were not even aware that you could download Neo4j Enterprise at dist.neo4j.org, but those who were using it and those who were using the official docker images that use the distribution were in for a surprise when they were forced to accept commercial terms in order to access the distributions.</p>
+</div>
+<div class="paragraph">
+<p>As copyright holders, Neo4j Inc has the right to add any license they want for the distributions they build and package themselves. Everyone else, like us, must always have the standard AGPL open source license if we are to package Neo4j Enterprise binaries and make it available for download.   And that&#8217;s exactly what we do.</p>
+</div>
+<div class="paragraph">
+<p><strong>Action 3</strong>: Neo4j Inc kept hazelcast ssl (causal cluster communication encryption) off by default , then created a ‘proprietary module’ that turns it on.</p>
+</div>
+<div class="paragraph">
+<p>This move was referenced in the <a href="https://neo4j.com/release-notes/neo4j-3-3-0/" target="_blank">3.3.0 release changelog</a>.  They justified this change with the following blurb:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Neo4j Enterprise Edition binaries now include new proprietary add-ons. Intra-cluster encryption is the first of these. Consequently Neo4j Enterprise Edition can no longer be distributed under a dual license but the source is still available under AGPLv3.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>That is one way to say it.  Of course, they could have easily just provided a Neo4j Enterprise binary without the intra cluster encryption turned off under it’s AGPLv3 license.</p>
+</div>
+<div class="paragraph">
+<p>Security critical components should be open source, security by obscurity has proven not to be a good strategy in the past.</p>
+</div>
+<div class="paragraph">
+<p>Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial paid version and is off in the open source binary. (If you can find it of course.)
+How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don&#8217;t turn it back on yourself , you may be a little less secure assuming you aren&#8217;t using encrypted tunnels / vpn, etc between your cluster nodes.</p>
+</div>
+<div class="paragraph">
+<p>Look for yourself:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/neo4j/neo4j/blob/3.2/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java" target="_blank">3.2 release code</a> : The sslPolicy initialized in the code.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">HazelcastClientConnector( Config config, LogProvider logProvider, SslPolicy sslPolicy,
+            HostnameResolver hostnameResolver )
+    {
+        this.config = config;
+        this.logProvider = logProvider;
+        this.sslPolicy = sslPolicy;
+        this.hostnameResolver = hostnameResolver;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java" target="_blank">3.3 release code</a>  :  The sslPolicy initialization has disapeared .</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">    HazelcastClientConnector( Config config, LogProvider logProvider, HostnameResolver hostnameResolver )
+        {
+            this.config = config;
+            this.logProvider = logProvider;
+            this.hostnameResolver = hostnameResolver;
+        }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want causal clustering interserver encryption turned  back on, simply pay for a commercial package.</p>
+</div>
+<div class="paragraph">
+<p>These three actions effectively made it impossible to get Neo4j Enterprise under its free open source license from Neo4j Inc starting with the 3.3.0 release.</p>
+</div>
+<div class="paragraph">
+<p>As a consulting company offering software development and support for Neo4j Enterprise open source licenses - we had to package and provide a way for our federal clients to download the open source Enterprise distributions.</p>
+</div>
+<div class="paragraph">
+<p>As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the AGPL licensed packages.</p>
+</div>
+<div class="paragraph">
+<p>You can download Neo4j Enterprise Distributions from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.   Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
+</div>
+<div class="paragraph">
+<p>If you are not happy with these moves, then please reach out to Neo4j Inc and voice your concerns.  As the community that made it what it is today, you have the ability to help keep their business units in line.</p>
+</div>
+<div class="paragraph">
+<p>Feel free to contact me directly via email at <a href="mailto:jmsuhy@igovsol.com">jmsuhy@igovsol.com</a> anytime if you have questions, comments, or just want to talk about Neo4j in general.</p>
+</div>
+        </div>
+
+        <menu>
+            <a href="" id="btn_share" class="btn" title="Share">
+                <span aria-hidden="true" data-icon="S"></span>
+                <strong>Share</strong>
+            </a>
+            <a href="http://twitter.com/share?text=Neo4j%20Enterprise%203.3.0%20is%20out%2C%20but%20you%20may%20have%20noticed%20that%20while%20still%20open%20source%2C%20you%20are%20going%20to%20have%20a%20harder%20time%20getting%20the%20enterprise%20package%20with%20it%E2%80%99s%20free%20open%20source%20license...&url=http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+            </a>
+        </menu>
+
+
+        <footer class="post-footer" role="contentinfo">
+
+            <div class="vcard">
+                <a href="http://blog.igovsol.com/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                    <span aria-hidden="true" data-icon=")"></span>
+                    <strong>Feed</strong>
+                </a>
+
+                <a href="http://blog.igovsol.com/author/jmsuhy/" class="photo">
+                    <span style="background-image: url('https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4');">
+                        <img src="https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4" alt="John Mark">
+                    </span>
+                </a>
+
+                <div class="details">
+                    <h4><a href="http://blog.igovsol.com/author/jmsuhy/" class="url n">John Mark</a></h4>
+                    Alexandria, VA<br>
+                    
+                </div>
+            </div>
+
+            <div id="user_bio">
+                <div class="inner">
+                    
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+    </article>
+
+    <div id="share_modal">
+        <div class="wrap">
+            <div class="inner">
+                <header>
+                    Share
+                    <a href="" class="close" title="Close">&times;</a>
+                </header>
+
+                <div class="roon-share-links">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                    <div id="fb-elems">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+                    </div>
+
+                    <div id="pinit-btn">
+                        <a href="//pinterest.com/pin/create/button/?url=http://blog.igovsol.com/2017/11/10/Neo4j-Enterprise-330-is-out-but-you-may-have-noticed-that-while-still-open-source-you-are-going-to-have-a-harder-time-getting-the-enterprise-package-with-its-free-open-source-license.html&amp;description=Neo4j%20Enterprise%203.3.0%20is%20out%2C%20but%20you%20may%20have%20noticed%20that%20while%20still%20open%20source%2C%20you%20are%20going%20to%20have%20a%20harder%20time%20getting%20the%20enterprise%20package%20with%20it%E2%80%99s%20free%20open%20source%20license...-iGov%20Inc%20Neo4j%20Blog " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+            function get_text(el) {
+                ret = "";
+                var length = el.childNodes.length;
+                for(var i = 0; i < length; i++) {
+                    var node = el.childNodes[i];
+                    if(node.nodeType != 8) {
+                        ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+                    }
+                }
+                return ret;
+            }
+            function reading_time () {
+                var post_content = document.getElementById('js-post-content');
+                if (post_content) {
+                    var words = get_text(post_content),
+                        count = words.split(/\s+/).length,
+                        read_time = Math.ceil((count / 150)),
+                        read_time_node = document.createTextNode(read_time + ' min read');
+                    document.getElementById('js-reading-time').appendChild(read_time_node);
+                }
+            }
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+            reading_time();
+        }
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+        <script>
+            $(function(){
+                var share_modal = $("#share_modal"),
+                    update_social_links = true;
+
+                $("#btn_share").click(function(){
+                    var that = $(this);
+                    share_modal.fadeIn(200);
+                    return false;
+                });
+
+                share_modal.click(function(e){
+                    if (e.target.className == "wrap" || e.target.id == "share_modal") {
+                        share_modal.fadeOut(200);
+                    }
+                    return false;
+                });
+
+                share_modal.find("div.inner > header > a.close").click(function(){
+                    share_modal.fadeOut(200);
+                    return false;
+                });
+            });
+        </script>
+
+
+
+</body>
+</html>
