@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
-    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510672083413" />
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510679785370" />
     
     
     
@@ -139,10 +139,10 @@
 <p>Back to the core of this post.   So what has Neo4j Inc done to limit your access to official Neo4j Enterprise binaries packaged with the free open source <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>?</p>
 </div>
 <div class="paragraph">
-<p><strong>Action 1</strong>:  The enterprise packaging build instructions were removed from the code base.   A few weeks ago, the enterprise packaging ‘instructions’ were removed from the code base.  Until the 3.3.0 release,  anyone could have checked out the Neo4j source code from github, and run a few simple commands to build the free Neo4j Enterprise binaries.   That’s not the case anymore.  If you run the same commands that worked before,  you will notice only community binaries are built.  Who really uses Neo4j Community Edition when the they can use Enterprise edition for free?</p>
+<p><strong>Action 1</strong>:  The enterprise packaging build instructions <a href="https://github.com/neo4j/neo4j/commit/affe1a0b4ab47c9d4673bfa507868ccd03c48ddd" target="_blank">were removed from the code base</a>.   Until the 3.3.0 release,  anyone could have checked out the <a href="https://github.com/neo4j/neo4j" target="_blank">Neo4j source code from github</a>, and run a few simple commands to build the free Neo4j Enterprise binaries.   That’s not the case anymore.  If you run the same commands that worked before,  you will notice only community binaries are built.  Who really uses Neo4j Community Edition once  they realize they can use Enterprise edition for free?</p>
 </div>
 <div class="paragraph">
-<p>The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution download, much like the instructions you get with your furniture you get at IKEA.    All the artifacts that are used to build the neo4j-enterprise binary are still there and open source, but the instructions explaining how to put together the neo4j-enterprise binary you download have disappeared.</p>
+<p>The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binaries, much like the instructions you get with your furniture you get at IKEA.    All the artifacts that are used to build the neo4j-enterprise binary are still present and open source, but the instructions explaining how to put together these artifacts into the neo4j-enterprise binary you download have disappeared.</p>
 </div>
 <div class="paragraph">
 <p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into their distribution site binary downloads that are used for docker and direct downloads of Neo4j Enterprise.    Many people were not even aware that you could download Neo4j Enterprise at dist.neo4j.org, but those who were using it and those who were using the official docker images that use the distribution were in for a surprise when they were forced to accept commercial terms in order to access the distributions.</p>
