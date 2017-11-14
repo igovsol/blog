@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 14:48:21 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 14:58:43 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
 <p>Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the <a href="https://neo4j.com/release-notes/neo4j-3-3-0/" target="_blank">3.3.0 release changelog</a></p>
 </div>
 <div class="paragraph">
 <p>Neo4j Enterprise is still free under its open source <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binaries from the source code or download enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
 </div>
 <div class="paragraph">
-<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the Linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries we packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
+<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the Linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries we packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
 </div>
 <div class="paragraph">
-<p>Why has Neo4j made it harder to access the open source enterprise binaries?</p>
+<p>Why has Neo4j Inc made it harder to access the open source enterprise binaries?</p>
 </div>
 <div class="paragraph">
 <p>If they are going to take the trouble to make Neo4j Enterprise open source packages more inaccessible, why not just take Neo4j Enterprise closed source before releasing 3.3.0?</p>
 </div>
 <div class="paragraph">
-<p>Only Neo4j Inc can answer these questions, and I feel they have some explaining to do to the open source community.</p>
+<p>Only Neo4j Inc can answer these questions, and I feel they owe an explanation to the open source community which has made Neo4j what it is today.</p>
 </div>
 <div class="paragraph">
-<p>With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j closed source.  It could backfire and be disastrous.</p>
+<p>With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j closed source.  It could backfire and be disastrous if the community revolts and creates a successful Neo4j fork.</p>
 </div>
 <div class="paragraph">
 <p>As a reference, look no further than MySQL , or rather what we now call <a href="https://mariadb.org/about/" target="_blank">MariaDB</a> - the more popular fork of MySQL, and <a href="http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/" target="_blank">can see what could happen</a>.</p>
 </div>
 <div class="paragraph">
-<p>It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me.</p>
+<p>It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me.</p>
 </div>
 <div class="paragraph">
-<p>Many federal agencies have already invested in the adoption and use of Neo4j Enterprise using it’s free open source license. Luckily, we happen to be Neo4j developers and these moves simply do not affect us or our federal clients because we build the binaries from source already.</p>
+<p>Many federal agencies have already invested in the adoption and use of Neo4j Enterprise using it&#8217;s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> open source license and if forced to pay for costly commercial subscriptions, they may likely replace Neo4j all together with an open source alternative.  Luckily, we happen to be Neo4j developers and these moves simply do not affect us or our federal clients because we already build the binaries from the source code - which defaults to the open source license.</p>
 </div>
 <div class="paragraph">
 <p>Back to the core of this post.   So what has Neo4j Inc done to limit your access to official Neo4j Enterprise binaries packaged with the free open source <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>?</p>
