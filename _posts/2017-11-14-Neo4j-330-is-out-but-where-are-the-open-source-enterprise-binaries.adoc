@@ -10,7 +10,7 @@ Neo4j 3.3.0 has been released and it has some great improvements and updates. Yo
 
 Neo4j Enterprise is still free under its open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. However you may have noticed that you can no longer build the enterprise package binaries from the source code or download enterprise package binary with it's free https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] from dist.neo4j.org.  Furthermore, if you use docker, https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70[you must now accept a 'commercial agreement’ before proceeding, window="_blank"].  In other words, official Neo4j docker images are no longer packaged with the free https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3, window="_blank"] licensed binaries.  
 
-Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the binary package file names would be https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz[neo4j-enterprise-3.3.0-unix.tar.gz , window="_blank"] for the Linux package and https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip[neo4j-enterprise-3.3.0-windows.zip , window="_blank"] for the windows package. (The links above point to the binaries we packaged with the AGPLv3 license.)
+Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the binary package file names would be https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz[neo4j-enterprise-3.3.0-unix.tar.gz , window="_blank"] for the Linux package and https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip[neo4j-enterprise-3.3.0-windows.zip , window="_blank"] for the windows package. (The links above point to the binaries we packaged with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].)
 
 Why has Neo4j made it harder to access the open source enterprise binaries? 
 
@@ -22,7 +22,7 @@ With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j 
 
 As a reference, look no further than MySQL , or rather what we now call https://mariadb.org/about/[MariaDB , window="_blank"] - the more popular fork of MySQL, and http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/[can see what could happen , window="_blank"].
 
-It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the AGPLv3 license. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me. 
+It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me. 
 
 Many federal agencies have already invested in the adoption and use of Neo4j Enterprise using it’s free open source license. Luckily, we happen to be Neo4j developers and these moves simply do not affect us or our federal clients because we build the binaries from source already.
 
@@ -46,7 +46,7 @@ ____
 
 
 
-That is one way to say it.  Of course, they could have easily just provided a Neo4j Enterprise binary without the intra cluster encryption turned off under it’s AGPLv3 license.
+That is one way to say it.  Of course, they could have easily just provided a Neo4j Enterprise binary without the intra cluster encryption turned off under it’s https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].
 
 Security critical components should be open source, security by obscurity has proven not to be a good strategy in the past.
  
@@ -89,13 +89,17 @@ These three actions effectively made it impossible to get Neo4j Enterprise under
    
 As a consulting company offering software development and support for Neo4j Enterprise open source licenses - we had to package and provide a way for our federal clients to download the open source Enterprise distributions.   
 
-As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the AGPL licensed packages.  
+As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 , window="_blank"] licensed packages.  
 
 You can download Neo4j Enterprise Distributions from our website at https://igovsol.com/downloads.html.   Federal agencies should email us at neo4j@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.
 
-If you are not happy with these moves, then please reach out to Neo4j Inc and voice your concerns.  As the community that made it what it is today, you have the ability to help keep their business units in line.  
+If you would were not aware that Neo4j Enterprise is open source just like it's sibling called 'Neo4j Community Edition', you can https://igovsol.com/downloads.html#neo4j-os-faqs[learn more here].
 
-Feel free to contact me directly via email at jmsuhy@igovsol.com anytime if you have questions, comments, or just want to talk about Neo4j in general.  
+If you are not happy with these moves, then please reach out to Neo4j Inc and voice your concerns.  As the community that made Neo4j what it is today, you have a voice in it's future if you choose to speak up.  
+
+Feel free to contact me directly via email at jmsuhy@igovsol.com anytime if you have questions, comments, or just want to talk about Neo4j in general. Though we only focus on US Federal government agencies, I am always happy to talk about technologies I am passionate about.  
+
+
 
 
 
