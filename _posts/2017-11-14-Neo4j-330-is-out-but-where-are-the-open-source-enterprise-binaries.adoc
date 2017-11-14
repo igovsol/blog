@@ -11,13 +11,13 @@ Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you do
 
 Why has Neo4j Inc made it harder to access the open source enterprise binaries? 
 
-If they are going to take the trouble to make Neo4j Enterprise open source packages more inaccessible, why not just take Neo4j Enterprise closed source before releasing 3.3.0? 
+If they are going to take the trouble to make Neo4j Enterprise open source packaged binaries more inaccessible, why not just take Neo4j Enterprise closed source before releasing 3.3.0? 
 
 Only Neo4j Inc can answer these questions, and I feel they owe an explanation to the open source community which has made Neo4j what it is today.
 
-With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j closed source.  It could backfire and be disastrous if the community revolts and creates a successful Neo4j fork.
+With ambitions of an IPO, it would be an extremely risky maneuver to take Neo4j closed source.  It could backfire and be disastrous if the community revolted and creates a more successful Neo4j fork.
 
-As a reference, look no further than MySQL , or rather what we now call https://mariadb.org/about/[MariaDB , window="_blank"] - the more popular fork of MySQL, and http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/[can see what could happen , window="_blank"].
+As a reference, look no further than MySQL and https://mariadb.org/about/[MariaDB , window="_blank"] , the more popular fork of MySQL, and  http://www.zdnet.com/article/open-source-mariadb-a-mysql-fork-challenges-oracle/[you can see what could happen , window="_blank"].
 
 It looks like Neo4j Inc does not want to tempt fate with a closed source move just yet.   Instead another path was taken which makes it very hard to get ahold of the enterprise packaged binaries with the free https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. As a passionate advocate of both open source software and Neo4j - this doesn’t sit well with me.
 
