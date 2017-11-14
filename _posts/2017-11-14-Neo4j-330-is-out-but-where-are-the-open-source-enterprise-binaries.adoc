@@ -1,12 +1,11 @@
-= Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license...
-// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+= Neo4j 3.3.0 is out, but where are the open source enterprise binaries?
 // :hp-image: /covers/cover.png
-:published_at: 2017-11-10
+:published_at: 2017-11-14
 :hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source
 :linkattrs:
-:hp-alt-title: Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise package with it’s free open source license...
+:hp-alt-title: Neo4j 3.3.0 is out, but where are the open source enterprise binaries?
 
-
+Neo4j Enterprise 3.3.0 is out, but you may have noticed that while still open source, you are going to have a harder time getting the enterprise binaries packaged with the free open source license...
 
 Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog , window="_blank"]   
 
