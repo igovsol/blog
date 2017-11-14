@@ -32,17 +32,31 @@ Back to the core of this post.   So what has Neo4j Inc done to limit your access
 
 The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binaries, much like the instructions you get with your furniture you get at IKEA.    All the artifacts that are used to build the neo4j-enterprise binary are still present and open source, but the instructions explaining how to put together these artifacts into the neo4j-enterprise binary you download have disappeared.   
 
-*Action 2*:  Neo4j Inc slipped a commercial license into their distribution site binary downloads that are used for docker and direct downloads of Neo4j Enterprise.    Many people were not even aware that you could download Neo4j Enterprise at dist.neo4j.org, but those who were using it and those who were using the official docker images that use the distribution were in for a surprise when they were forced to accept commercial terms in order to access the distributions.    
+*Action 2*:  Neo4j Inc slipped a commercial license into their distribution site binary downloads that are used for docker and direct downloads of Neo4j Enterprise.    Many people were not even aware that you could download Neo4j Enterprise at dist.neo4j.org, but those who were using it and those who were using the official docker images that use the distribution were in for a surprise when they were forced to accept commercial terms in order to access the distributions.  
 
-As copyright holders, Neo4j Inc has the right to add any license they want for the distributions they build and package themselves. Everyone else, like us, must always have the standard AGPL open source license if we are to package Neo4j Enterprise binaries and make it available for download.   And that's exactly what we do.
+Want to see for yourself - download the http://dist.neo4j.org/neo4j-enterprise-3.3.0-unix.tar.gz[Neo4j Inc's Neo4j Enterprise binary, window="_blank"] and take a look at the LICENSE.txt file.
+
+Instead of the standard https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] which used to be there, the LICENSE.txt file now says:
+
+----
+Network Engine for Objects in Lund AB. 2017. All Rights Reserved.
+Use of this Software without a proper commercial license with
+Neo4j, Inc. or its affiliates is prohibited.
+----
+
+
+
+As copyright holders, Neo4j Inc has the right to add any license they want for the binary distributions they build and package themselves. If you package the enterprise binary distribution like we do, you simply must make sure the LICENSE.txt file is the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] 
 
 *Action 3*: Neo4j Inc kept hazelcast ssl (causal cluster communication encryption) off by default , then created a ‘proprietary module’ that turns it on.
 
 This move was referenced in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog , window="_blank"].  They justified this change with the following blurb:
-____
+
+----
 
 Neo4j Enterprise Edition binaries now include new proprietary add-ons. Intra-cluster encryption is the first of these. Consequently Neo4j Enterprise Edition can no longer be distributed under a dual license but the source is still available under AGPLv3.
-____
+
+----
 
 
 
@@ -61,6 +75,7 @@ https://github.com/neo4j/neo4j/blob/3.2/enterprise/causal-clustering/src/main/ja
 
 [source,java]
 ----
+
 HazelcastClientConnector( Config config, LogProvider logProvider, SslPolicy sslPolicy,
             HostnameResolver hostnameResolver )
     {
@@ -69,7 +84,9 @@ HazelcastClientConnector( Config config, LogProvider logProvider, SslPolicy sslP
         this.sslPolicy = sslPolicy;
         this.hostnameResolver = hostnameResolver;
     }
-----   
+  
+----
+
     
 https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.3 release code , window="_blank"]  :  The sslPolicy initialization has disapeared .
     
