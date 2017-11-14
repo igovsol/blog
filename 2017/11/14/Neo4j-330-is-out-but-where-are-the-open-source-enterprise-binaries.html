@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
-    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510680650870" />
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510681040948" />
     
     
     
@@ -54,7 +54,7 @@
     <meta property="og:site_name" content="iGov Inc Neo4j Blog" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Neo4j 3.3.0 is out, but where are the open source enterprise binaries?" />
-    <meta property="og:description" content="Neo4j Enterprise is still free under its open source AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if you" />
+    <meta property="og:description" content="Neo4j Enterprise is still open source under it&amp;#8217;s AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if" />
     <meta property="og:url" content="http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" />
     <meta property="article:published_time" content="2017-11-14T00:00:00.000Z" />
     <meta property="article:tag" content="Neo4j" />
@@ -64,7 +64,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Neo4j 3.3.0 is out, but where are the open source enterprise binaries?" />
-    <meta name="twitter:description" content="Neo4j Enterprise is still free under its open source AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if you" />
+    <meta name="twitter:description" content="Neo4j Enterprise is still open source under it&amp;#8217;s AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if" />
     <meta name="twitter:url" content="http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" />
     
     <script type="application/ld+json">
@@ -82,7 +82,7 @@
     "url": "http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html",
     "datePublished": "2017-11-14T00:00:00.000Z",
     "keywords": "Neo4j, GraphDatabase, Neo4j Enterprise, open source",
-    "description": "Neo4j Enterprise is still free under its open source AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if you"
+    "description": "Neo4j Enterprise is still open source under it&amp;#8217;s AGPLv3 license. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&amp;#8217;s free AGPLv3 license from dist.neo4j.org.  Furthermore, if"
 }
     </script>
 
@@ -106,10 +106,10 @@
 
         <div class="text" id="js-post-content">
             <div class="paragraph">
-<p>Neo4j Enterprise is still free under its open source <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
+<p>Neo4j Enterprise is still open source under it&#8217;s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
 </div>
 <div class="paragraph">
-<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the Linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries we packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
+<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries we packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
 </div>
 <div class="paragraph">
 <p>Why has Neo4j Inc made it harder to access the open source enterprise binaries?</p>
