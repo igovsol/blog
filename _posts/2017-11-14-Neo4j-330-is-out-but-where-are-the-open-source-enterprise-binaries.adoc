@@ -25,13 +25,15 @@ Federal agencies have already invested in the adoption and use of Neo4j Enterpri
 
 Back to the core of this post.   So what has Neo4j Inc done to limit your access to Neo4j Enterprise binaries packaged with the free open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]?
 
-*Action 1*:  The enterprise packaging build instructions https://github.com/neo4j/neo4j/commit/affe1a0b4ab47c9d4673bfa507868ccd03c48ddd[were removed from the code base , window="_blank"].   Until the 3.3.0 release,  anyone could have checked out the https://github.com/neo4j/neo4j[Neo4j source code from github , window="_blank"], and run a few simple commands to build the free Neo4j Enterprise binaries.   That’s not the case anymore.  If you run the same commands that worked before,  you will notice only community binaries are built.  Who really uses Neo4j Community Edition once  they realize they can use Enterprise edition for free?  
+*Action 1*:  The enterprise packaging build instructions https://github.com/neo4j/neo4j/commit/affe1a0b4ab47c9d4673bfa507868ccd03c48ddd[were removed from the code base , window="_blank"].   Until the 3.3.0 release,  anyone could have checked out the https://github.com/neo4j/neo4j[Neo4j source code from github , window="_blank"], and run a few simple commands to build the Neo4j Enterprise binaries complete with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].   That’s not the case anymore.  If you run the build commands on the 3.3.0 branch you will notice that only the Neo4j Community Edition binary is present after the build process completes.  Who really uses Neo4j Community Edition once they realized Neo4j Enterprise edition is also free?  
 
-The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binaries, much like the instructions you get with your furniture you get at IKEA.    All the artifacts that are used to build the neo4j-enterprise binary are still present and open source, but the instructions explaining how to put together these artifacts into the neo4j-enterprise binary you download have disappeared.   
+The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binary, much like the instructions you get with furniture purchased at IKEA.    All the artifacts that are used to build the Neo4j Enterprise binary are all open source, but the instructions explaining how to put together these artifacts have disappeared.   
 
-*Action 2*:  Neo4j Inc slipped a commercial license into their distribution site binary downloads that are used for docker and direct downloads of Neo4j Enterprise.    Many people were not even aware that you could download Neo4j Enterprise at dist.neo4j.org, but those who were using it and those who were using the official docker images that use the distribution were in for a surprise when they were forced to accept commercial terms in order to access the distributions.  
+*Action 2*:  Neo4j Inc slipped a commercial license into the binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn't advertised for obvious reasons.     
 
-Want to see for yourself - download the http://dist.neo4j.org/neo4j-enterprise-3.3.0-unix.tar.gz[Neo4j Inc's Neo4j Enterprise binary, window="_blank"] and take a look at the LICENSE.txt file.
+Those who were using the official docker images or downloading the enterprise binary directly from dist.neo4j.org were in for a surprise when they were forced to accept commercial terms in order to access the distributions.  
+
+Want to see for yourself - download the http://dist.neo4j.org/neo4j-enterprise-3.3.0-unix.tar.gz[Neo4j Enterprise binary, window="_blank"] which Neo4j Inc packages and take a look at the LICENSE.txt file.
 
 Instead of the standard https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] which used to be there, the LICENSE.txt file now says:
 
@@ -41,11 +43,13 @@ Use of this Software without a proper commercial license with
 Neo4j, Inc. or its affiliates is prohibited.
 ----
 
+As copyright holders, Neo4j Inc has the right to add any license they want for the binary distributions they build, package, and make available for download themselves.  If anyone else packages the enterprise binary distribution like we do, you must simply make sure the LICENSE.txt file is the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  That is exactly what we do.
 
+*Action 3*: Neo4j Inc kept causal cluster communication encryption (Intra-cluster encryption) off by default. They then created a ‘proprietary module’ that turns it on. 
 
-As copyright holders, Neo4j Inc has the right to add any license they want for the binary distributions they build and package themselves. If you package the enterprise binary distribution like we do, you simply must make sure the LICENSE.txt file is the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] 
+Of course you can get this new 'security module' by purchasing a costly commercial package.  If you actually need this and don't want to pay for it, we will be putting our FISMA framework modules on github soon which turn this feature back on.
 
-*Action 3*: Neo4j Inc kept hazelcast ssl (causal cluster communication encryption) off by default , then created a ‘proprietary module’ that turns it on.
+Fortunatly turning it back on yourself is quite easy as you will see below.
 
 This move was referenced in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog , window="_blank"].  They justified this change with the following blurb:
 
@@ -57,12 +61,13 @@ Neo4j Enterprise Edition binaries now include new proprietary add-ons. Intra-clu
 
 
 
-That is one way to say it.  Of course, they could have easily just provided a Neo4j Enterprise binary with the intra cluster encryption turned off under it’s https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  
+That is one way to say it.  Of course, they could have easily just kept a Neo4j Enterprise binary available with the intra-cluster encryption turned off under it’s https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  
 
-Security critical components should be open source, security by obscurity has proven not to be a good strategy in the past.
+I believe that security critical components of Neo4j should remain open source, security by obscurity has proven not to be a good strategy in the past.  Currently, the security components of Neo4j Enterprise are still open source, in the case of intra-cluster encryption (causal clustering) - it is just turned off by default.
  
 Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial version and is turned off in the open source binary.  
-How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don't turn it back on yourself , you may be a little less secure assuming you aren't using encrypted tunnels / vpn, etc between your cluster nodes.
+
+How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don't turn it back on yourself , you may be a little less secure assuming you aren't using encrypted tunnels / vpn, etc between your cluster nodes.  
 
 
 
@@ -85,10 +90,11 @@ HazelcastClientConnector( Config config, LogProvider logProvider, SslPolicy sslP
 ----
 
     
-https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.3 release code , window="_blank"]  :  The sslPolicy initialization has disapeared .
+https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/java/org/neo4j/causalclustering/discovery/HazelcastClientConnector.java[3.3 release code , window="_blank"]  :  The sslPolicy initialization has disappeared.
     
 [source,java]
 ----
+
     HazelcastClientConnector( Config config, LogProvider logProvider, HostnameResolver hostnameResolver )
         {
             this.config = config;
@@ -97,21 +103,23 @@ https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/ja
         }
 ----
 
-If you want causal clustering interserver encryption turned  back on, simply pay for a commercial package. 
+If you want causal clustering interserver encryption turned  back on, simply pay for a commercial package or just turn it back on like we do for our federal clients. 
     
 These three actions effectively made it impossible to get Neo4j Enterprise under its free open source license from Neo4j Inc starting with the 3.3.0 release.     
    
-As a consulting company offering software development and support for Neo4j Enterprise open source licenses - we had to package and provide a way for our federal clients to download the open source Enterprise distributions.   
+As a consulting company offering software development and support for Neo4j Enterprise open source licenses to the US federal government - we had to package and provide a way for our federal clients to download the open source Enterprise distributions already.
 
 As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 , window="_blank"] licensed packages.  
 
-You can download Neo4j Enterprise Distributions from our website at https://igovsol.com/downloads.html.   Federal agencies should email us at neo4j@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.
+We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.  
 
-If you would were not aware that Neo4j Enterprise is open source just like it's sibling called 'Neo4j Community Edition', you can https://igovsol.com/downloads.html#neo4j-os-faqs[learn more here].
+You can download Neo4j Enterprise Distributions from our website at https://igovsol.com/downloads.html.   Federal agencies should email us at neo4j@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.   
 
-If you are not happy with these moves, then please reach out to Neo4j Inc and voice your concerns.  As the community that made Neo4j what it is today, you have a voice in it's future if you choose to speak up.  
+If you would were not aware that Neo4j Enterprise is open source just like it's sibling 'Neo4j Community Edition', you can https://igovsol.com/downloads.html#neo4j-os-faqs[learn more here , window="_blank"].
 
-Feel free to contact me directly via email at jmsuhy@igovsol.com anytime if you have questions, comments, or just want to talk about Neo4j in general. Though we only focus on US Federal government agencies, I am always happy to talk about technologies I am passionate about.  
+If you are not happy with Neo4j Inc's behavior, then please reach out to Neo4j Inc and voice your concerns.   
+
+Feel free to contact me directly via email at jmsuhy@igovsol.com  if you have questions, comments, or just want to talk about Neo4j in general.  We are always available.  
 
 
 
