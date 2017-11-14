@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 14:58:43 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 15:04:07 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
 <p>Neo4j 3.3.0 has been released and it has some great improvements and updates. You can read about them in the <a href="https://neo4j.com/release-notes/neo4j-3-3-0/" target="_blank">3.3.0 release changelog</a></p>
 </div>
 <div class="paragraph">
@@ -63,7 +63,7 @@
 <p>Security critical components should be open source, security by obscurity has proven not to be a good strategy in the past.</p>
 </div>
 <div class="paragraph">
-<p>Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial paid version and is off in the open source binary. (If you can find it of course.)
+<p>Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial paid version and is turned off in the open source binary.
 How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don&#8217;t turn it back on yourself , you may be a little less secure assuming you aren&#8217;t using encrypted tunnels / vpn, etc between your cluster nodes.</p>
 </div>
 <div class="paragraph">
