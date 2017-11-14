@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 18:48:01 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Nov 2017 20:24:03 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j 3.3.0 is out, but where are the open source enterprise binaries?]]></title><description><![CDATA[<div class="paragraph">
 <p>Neo4j Enterprise is still open source under it&#8217;s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
 </div>
 <div class="paragraph">
@@ -34,6 +34,11 @@
 <div class="paragraph">
 <p>The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binary, much like the instructions you get with furniture purchased at IKEA.    All the artifacts that are used to build the Neo4j Enterprise binary are all open source, but the instructions explaining how to put together these artifacts have disappeared.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="http://blog.igovsol.com/images/standalone-1.png" alt="standalone 1.png">
+</div>
+</div>
 <div class="paragraph">
 <p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into the binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn&#8217;t advertised for obvious reasons.</p>
 </div>
@@ -48,9 +53,10 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Network Engine for Objects in Lund AB. 2017. All Rights Reserved.
-Use of this Software without a proper commercial license with
-Neo4j, Inc. or its affiliates is prohibited.</pre>
+<pre>Network Engine for Objects in Lund AB. 2017.
+All Rights Reserved. Use of this Software without
+a proper commercial license with Neo4j, Inc. or its affiliates
+is prohibited.</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -70,7 +76,11 @@ Neo4j, Inc. or its affiliates is prohibited.</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Neo4j Enterprise Edition binaries now include new proprietary add-ons. Intra-cluster encryption is the first of these. Consequently Neo4j Enterprise Edition can no longer be distributed under a dual license but the source is still available under AGPLv3.</pre>
+<pre>Neo4j Enterprise Edition binaries now include new proprietary
+add-ons. Intra-cluster encryption is the first of these.
+Consequently Neo4j Enterprise Edition can no longer be
+distributed under a dual license but the source is still
+available under AGPLv3.</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -132,7 +142,7 @@ Neo4j, Inc. or its affiliates is prohibited.</pre>
 <p>We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.</p>
 </div>
 <div class="paragraph">
-<p>You can download the open source Neo4j Enterprise binaries we packaged from source  <a href="https://igovsol.com/downloads.html" target="_blank">from our website</a>.   Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
+<p>You can download Neo4j Enterprise Distributions from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.   Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
 </div>
 <div class="paragraph">
 <p>If you would were not aware that Neo4j Enterprise is open source just like it&#8217;s sibling 'Neo4j Community Edition', you can <a href="https://igovsol.com/downloads.html#neo4j-os-faqs" target="_blank">learn more here</a>.</p>
