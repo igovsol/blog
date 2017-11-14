@@ -50,7 +50,7 @@ That is one way to say it.  Of course, they could have easily just provided a Ne
 
 Security critical components should be open source, security by obscurity has proven not to be a good strategy in the past.
  
-Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial paid version and is off in the open source binary. (If you can find it of course.)  
+Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial paid version and is turned off in the open source binary.  
 How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don't turn it back on yourself , you may be a little less secure assuming you aren't using encrypted tunnels / vpn, etc between your cluster nodes.
 
 
