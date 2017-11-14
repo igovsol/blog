@@ -29,6 +29,8 @@ Back to the core of this post.   So what has Neo4j Inc done to limit your access
 
 The packaging system simply provides the instructions on how to ‘build’ the Neo4j Enterprise distribution binary, much like the instructions you get with furniture purchased at IKEA.    All the artifacts that are used to build the Neo4j Enterprise binary are all open source, but the instructions explaining how to put together these artifacts have disappeared.   
 
+image::standalone-1.png[]
+
 *Action 2*:  Neo4j Inc slipped a commercial license into the binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn't advertised for obvious reasons.     
 
 Those who were using the official docker images or downloading the enterprise binary directly from dist.neo4j.org were in for a surprise when they were forced to accept commercial terms in order to access the distributions.  
@@ -38,9 +40,10 @@ Want to see for yourself - download the http://dist.neo4j.org/neo4j-enterprise-3
 Instead of the standard https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] which used to be there, the LICENSE.txt file now says:
 
 ----
-Network Engine for Objects in Lund AB. 2017. All Rights Reserved.
-Use of this Software without a proper commercial license with
-Neo4j, Inc. or its affiliates is prohibited.
+Network Engine for Objects in Lund AB. 2017. 
+All Rights Reserved. Use of this Software without 
+a proper commercial license with Neo4j, Inc. or its affiliates
+is prohibited.
 ----
 
 As copyright holders, Neo4j Inc has the right to add any license they want for the binary distributions they build, package, and make available for download themselves.  If anyone else packages the enterprise binary distribution like we do, you must simply make sure the LICENSE.txt file is the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  That is exactly what we do.
@@ -55,7 +58,11 @@ This move was referenced in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3
 
 ----
 
-Neo4j Enterprise Edition binaries now include new proprietary add-ons. Intra-cluster encryption is the first of these. Consequently Neo4j Enterprise Edition can no longer be distributed under a dual license but the source is still available under AGPLv3.
+Neo4j Enterprise Edition binaries now include new proprietary 
+add-ons. Intra-cluster encryption is the first of these.
+Consequently Neo4j Enterprise Edition can no longer be 
+distributed under a dual license but the source is still 
+available under AGPLv3.
 
 ----
 
@@ -120,6 +127,18 @@ If you would were not aware that Neo4j Enterprise is open source just like it's 
 If you are not happy with Neo4j Inc's behavior, then please reach out to Neo4j Inc and voice your concerns.   
 
 Feel free to contact me directly via email at jmsuhy@igovsol.com  if you have questions, comments, or just want to talk about Neo4j in general.  We are always available.  
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
