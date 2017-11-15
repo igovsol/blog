@@ -50,9 +50,7 @@ As copyright holders, Neo4j Inc has the right to add any license they want for t
 
 *Action 3*: Neo4j Inc kept causal cluster communication encryption (Intra-cluster encryption) off by default. They then created a ‘proprietary module’ that turns it on. 
 
-Of course you can get this new 'security module' by purchasing a costly commercial package.  If you actually need this and don't want to pay for it, we will be putting our FISMA framework modules on github soon which turn this feature back on.
-
-Fortunatly turning it back on yourself is quite easy as you will see below.
+Of course you can get intra-cluster encryption turned back on by purchasing a costly commercial package. 
 
 This move was referenced in the https://neo4j.com/release-notes/neo4j-3-3-0/[3.3.0 release changelog , window="_blank"].  They justified this change with the following blurb:
 
@@ -68,11 +66,13 @@ available under AGPLv3.
 
 
 
-That is one way to say it.  Of course, they could have easily just kept a Neo4j Enterprise binary available with the intra-cluster encryption turned off under it’s https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  
+That is one way to say it.  Of course, they could have easily just kept a Neo4j Enterprise binary available with the intra-cluster encryption turned off under it’s https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"].  This is exactly what we get when we build from the source code.
 
-I believe that security critical components of Neo4j should remain open source, security by obscurity has proven not to be a good strategy in the past.  Currently, the security components of Neo4j Enterprise are still open source, in the case of intra-cluster encryption (causal clustering) - it is just turned off by default.
+I believe that security critical components of Neo4j should remain open source, security by obscurity has proven not to be a good strategy in the past.  Currently, the security components of Neo4j Enterprise are still open source. In the case of intra-cluster encryption (causal clustering) - it is just turned off.
  
-Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial version and is turned off in the open source binary.  
+Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary (we compile from source) is that intra-cluster encryption is still off by default in the AGPLv3 version. 
+
+We turn it back on for our federal customers via our FISMA framework, which will be available on github for everyone to use soon.
 
 How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don't turn it back on yourself , you may be a little less secure assuming you aren't using encrypted tunnels / vpn, etc between your cluster nodes.  
 
@@ -110,15 +110,17 @@ https://github.com/neo4j/neo4j/blob/3.3/enterprise/causal-clustering/src/main/ja
         }
 ----
 
-If you want causal clustering interserver encryption turned  back on, simply pay for a commercial package or just turn it back on like we do for our federal clients. 
+
     
-These three actions effectively made it impossible to get Neo4j Enterprise under its free open source license from Neo4j Inc starting with the 3.3.0 release.     
+These three actions effectively made it impossible to get Neo4j Enterprise binaries with the open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]  from Neo4j Inc starting with the 3.3.0 release.     
    
-As a consulting company offering software development and support for Neo4j Enterprise open source licenses to the US federal government - we had to package and provide a way for our federal clients to download the open source Enterprise distributions already.
+As a consulting company offering software development and support for Neo4j Enterprise open source licenses to the US federal government, we have been building the binaries ourselves for some time.
 
-As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 , window="_blank"] licensed packages.  
+As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use use with docker compose.   
 
-We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.  
+We will have docker images up as well complete with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 , window="_blank"] licensed packages.  
+
+We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.    
 
 You can download Neo4j Enterprise Distributions from our website at https://igovsol.com/downloads.html.   Federal agencies should email us at neo4j@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.   
 
@@ -127,6 +129,19 @@ If you would were not aware that Neo4j Enterprise is open source just like it's 
 If you are not happy with Neo4j Inc's behavior, then please reach out to Neo4j Inc and voice your concerns.   
 
 Feel free to contact me directly via email at jmsuhy@igovsol.com  if you have questions, comments, or just want to talk about Neo4j in general.  We are always available.  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
