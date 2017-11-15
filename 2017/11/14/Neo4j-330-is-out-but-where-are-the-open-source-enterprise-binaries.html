@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
-    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510691043615" />
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510708571047" />
     
     
     
@@ -173,10 +173,7 @@ is prohibited.</pre>
 <p><strong>Action 3</strong>: Neo4j Inc kept causal cluster communication encryption (Intra-cluster encryption) off by default. They then created a ‘proprietary module’ that turns it on.</p>
 </div>
 <div class="paragraph">
-<p>Of course you can get this new 'security module' by purchasing a costly commercial package.  If you actually need this and don&#8217;t want to pay for it, we will be putting our FISMA framework modules on github soon which turn this feature back on.</p>
-</div>
-<div class="paragraph">
-<p>Fortunatly turning it back on yourself is quite easy as you will see below.</p>
+<p>Of course you can get intra-cluster encryption turned back on by purchasing a costly commercial package.</p>
 </div>
 <div class="paragraph">
 <p>This move was referenced in the <a href="https://neo4j.com/release-notes/neo4j-3-3-0/" target="_blank">3.3.0 release changelog</a>.  They justified this change with the following blurb:</p>
@@ -191,13 +188,16 @@ available under AGPLv3.</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>That is one way to say it.  Of course, they could have easily just kept a Neo4j Enterprise binary available with the intra-cluster encryption turned off under it’s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.</p>
+<p>That is one way to say it.  Of course, they could have easily just kept a Neo4j Enterprise binary available with the intra-cluster encryption turned off under it’s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.  This is exactly what we get when we build from the source code.</p>
 </div>
 <div class="paragraph">
-<p>I believe that security critical components of Neo4j should remain open source, security by obscurity has proven not to be a good strategy in the past.  Currently, the security components of Neo4j Enterprise are still open source, in the case of intra-cluster encryption (causal clustering) - it is just turned off by default.</p>
+<p>I believe that security critical components of Neo4j should remain open source, security by obscurity has proven not to be a good strategy in the past.  Currently, the security components of Neo4j Enterprise are still open source. In the case of intra-cluster encryption (causal clustering) - it is just turned off.</p>
 </div>
 <div class="paragraph">
-<p>Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary is that intra cluster encryption is turned on in the commercial version and is turned off in the open source binary.</p>
+<p>Right now the only difference between the paid Neo4j Enterprise (commercial) binary and Neo4j Enterprise (open source) binary (we compile from source) is that intra-cluster encryption is still off by default in the AGPLv3 version.</p>
+</div>
+<div class="paragraph">
+<p>We turn it back on for our federal customers via our FISMA framework, which will be available on github for everyone to use soon.</p>
 </div>
 <div class="paragraph">
 <p>How many of you are actually using causal clustering in production?  Well - if you upgrade to 3.3.0 and don&#8217;t turn it back on yourself , you may be a little less secure assuming you aren&#8217;t using encrypted tunnels / vpn, etc between your cluster nodes.</p>
@@ -234,16 +234,16 @@ available under AGPLv3.</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If you want causal clustering interserver encryption turned  back on, simply pay for a commercial package or just turn it back on like we do for our federal clients.</p>
+<p>These three actions effectively made it impossible to get Neo4j Enterprise binaries with the open source <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>  from Neo4j Inc starting with the 3.3.0 release.</p>
 </div>
 <div class="paragraph">
-<p>These three actions effectively made it impossible to get Neo4j Enterprise under its free open source license from Neo4j Inc starting with the 3.3.0 release.</p>
+<p>As a consulting company offering software development and support for Neo4j Enterprise open source licenses to the US federal government, we have been building the binaries ourselves for some time.</p>
 </div>
 <div class="paragraph">
-<p>As a consulting company offering software development and support for Neo4j Enterprise open source licenses to the US federal government - we had to package and provide a way for our federal clients to download the open source Enterprise distributions already.</p>
+<p>As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use use with docker compose.</p>
 </div>
 <div class="paragraph">
-<p>As part of the Neo4j open source community, we’ve decided to absorb the hosting costs and make these distributions available to the general public, not just US federal agencies.  We’ve setup a distribution site that can be used to download Neo4j Enterprise directly, or use with docker.   We will have docker images up as well complete with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed packages.</p>
+<p>We will have docker images up as well complete with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed packages.</p>
 </div>
 <div class="paragraph">
 <p>We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.</p>
