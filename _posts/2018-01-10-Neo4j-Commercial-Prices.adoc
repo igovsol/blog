@@ -1,0 +1,275 @@
+= Neo4j Enterprise Commercial Prices
+// :hp-image: /covers/cover.png
+:published_at: 2018-01-10
+:hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source
+:linkattrs:
+:hp-alt-title: Neo4j Commercial Prices
+
+
+This post gives you an idea of just how expensive Neo4j Enterprise really is and what you get for all that money.  
+
+Finding Neo4j Enterprise commercial prices is extremely difficult. 
+
+Neo4j Inc keeps this information under close guard, and for good reason which you will see as you read on.
+
+---
+
+To understand why pricing is kept under close guard, and is only released under the 'guidance' of a sales person,
+you have to understand a few things about Neo4j Enterprise.
+
+
+Neo4j Enterprise is available under a dual license commercial or open source license.
+
+You can choose pay for a yearly commercial subscription or just use the software for free under the open source license forever.  
+
+You heard me right, Neo4j Enterprise is also available for free under the standard open source AGPLv3 license.  
+
+You get all the enterprise features such as high availability clustering! 
+
+Neo4j Enterprise server is the same physical core software - the license is just different.  
+
+
+You are free to use as many cores or instances as your heart desires!  Remember this when you are looking at the pricing information below.
+
+You can use it in any environment including production, and yes you CAN use it in closed source projects!  (My next post addresses the AGPL mis-information that is floating around on this subject.)
+
+The US Federal government is already using Neo4j Enterprise with it's open source license in a closed source project. I know this because I am part of the project and support the entire technology stack, not just Neo4j.
+
+
+So what exactly are you paying for when you get a Neo4j Enterprise commercial package? 
+
+Well, you are basically paying for production email and phone support for Neo4j.  
+
+More specifically, if the reseller you purchase a commercial package from can't answer a support request, Neo4j Inc can help the reseller.  
+
+Keep in mind that this production support is only for Neo4j,
+not the other technologies in your stack.   
+
+Many graph projects have many components in their stack, not just Neo4j.
+
+Other common software includes elastic search, kafka, custom client side UI, , custom micro services, etc.  It makes no sense to get a commercial subscription for Neo4j and leave everything else unsupported.
+
+Buying support just for Neo4j would be like having a custom car built for you and only getting a warrantee for your water pump!
+
+If your transmission fails - good luck with that!
+
+
+Are you starting to understand why you need a slick sales person to help give you 'guidance'?   
+
+
+
+---
+
+
+Finally, before jumping into the prices. 
+
+I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution.   Why would you need production support for something that has not yet been built. 
+
+Use your budget to develop your graph solution.
+
+Don't waste it on unnecessary production support for something not yet in production. 
+
+Now that you are a little more educated on your Neo4j Enterprise options,
+lets jump into the most current public available Neo4j Enterprise commercial prices.
+
+
+
+
+
+[discrete]
+
+== Neo4j Enterprise Commercial Pricing
+
+Information copied from GSA SCHEDULE.
+
+
+
+GSA Schedule 70 pricing for SIN 132-32 is discounted for the first year at a percentage off of the commercial list price. All future price increases shall adhere to the EPA clause GSAR 552.216-70 Economic Price Adjustment for compliance with the GSA terms and conditions of this Schedule 70 Contract Award.
+
+Neo4j Bundles are available by Annual Subscription. All prices are Annual Subscription prices.
+
+The Neo4j database runtime is called an “Instance”. Clusters comprise multiple instances: normally three or more. Instances normally run on different machines / OSs, although multiple instances can be run on a single machine / OS. Each Neo4j instance runs inside of a corresponding Java Virtual Machine (JVM) instance.
+
+For Neo4j instances running in virtualized environments, only the number of cores allotted to the virtual OS in which Neo4j is running need be licensed. For virtual machines running in EC2 and other virtualized Cloud platforms (such as SoftLayer, Oracle Cloud, et al.), “virtual cores” and “virtual CPUs” (vCPUs) each count as one core.
+
+All Neo4j Bundles include a commercial license for Neo4j Enterprise Edition. The commercial license grants rights to the use of Neo4j Enterprise in commercial and/or federal and government projects on an annual / renewable basis, and includes Support in the GSA purchase price.
+
+
+[discrete]
+=== 1. Neo4j Enterprise Bundle
+
+Standard cluster for enterprise applications that are used by more than one department (or by a larger department), or by customer-facing applications. Neo4j Enterprise Bundle basic configuration includes:
+
+a. 3 Production Instances (up to 8 Cores per Instance).
+
+b. 3 Test Instances (no Core limit).
+
+c. PremiumSupport: 24x7 / 1-hour response time for Severity 1 issues, email and
+phone.
+
+d. Unlimited number of licensed developers.
+
+
+
+[width="90%",cols="50,100,100",options="header"]
+|=========================================================
+| MFR Part # | Product Name / Description | Annual Subscription Price
+| NT 010      | Neo4j Enterprise Bundle Base | $ 189,188
+| NT 011 | Additional Production Capacity (per Core) | $ 6,609
+| NT 012 | Disaster Recovery (per Core) | $ 3,305
+| NT 013 | Additional Test Instances (per Instance)
+| $ 4,957
+|NT 014
+|Additional Instance (up to 8 Cores)
+| $52,874
+|NT 015
+|8‐Core pack
+|$ 52,874
+|NT 016
+|12‐Core pack
+|$ 79,310
+|NT 017
+|16‐Core pack
+|$ 105,747
+|NT 018
+|24‐Core pack
+|$ 158,621
+|NT 019 | 32‐Core pack | $ 211,494
+
+|=========================================================
+
+
+
+
+
+* * *
+
+
+
+
+
+
+[discrete]
+=== 2. Neo4j Business Bundles – Premium Support
+A small cluster for use by a single department, for internal employee-facing applications.
+Neo4j Business Bundles – Premium Support include:
+
+a. Premium Support: 24x7 / 1-hour response time for Severity 1 issues, email and phone.
+
+b. Unlimited number of licensed developers.
+
+
+
+[width="90%",cols="50,100,100, 100",options="header"]
+|=========================================================
+| MFR Part # | Product Name / Description | Configuration | Annual Subscription Price
+| NT 001
+|Neo4j Business Bundle 1 Premium
+|3 Production Instances (up to 4 Cores per Instance) 3 Test Instances (no Core Limit)
+|$ 106,573
+|NT 002
+|Neo4j Business Bundle 2 Premium
+|2 Production Instances (up to 4 Cores per Instance) 2 Test Instances (no Core Limit)
+|$ 71,049
+|NT 003
+|Additional Production Capacity (per Core)
+|
+|$ 6,609
+|NT 004
+|Additional Instance (up to 4 Cores)
+|
+|$ 26,437
+|NT 005
+|Additional Test Instances (per Instance)
+|
+|$ 4,957
+
+
+|=========================================================
+
+
+
+* * *
+
+
+[discrete]
+=== 3. Neo4j Business Bundles – Standard Support
+A small cluster for use by a single department,
+for internal employee-facing applications.
+Neo4j Business Bundles – Standard Support include:
+
+a. Standard Support: 10 x 5 / 24-hour response time, email
+
+b. Unlimited number of licensed developers.
+
+
+[width="90%",cols="50,100,100, 100",options="header"]
+|=========================================================
+| MFR Part # | Product Name / Description | Configuration | Annual Subscription Price
+|NT 501
+|Neo4j Business Bundle 1 Standard
+|3 Production Instances (up to 4 Cores per Instance) 3 Test Instances (no Core Limit)
+|$ 85,259
+|NT 502
+|Neo4j Business Bundle 2 Standard
+|2 Production Instances (up to 4 Cores per Instance) 2 Test Instances (no Core Limit)
+|$ 56,839
+|NT 503
+|Additional Production Capacity (per Core)
+|
+|$ 5,287
+|NT 504
+|Additional Instance (up to 4 Cores)
+|
+|$ 21,149
+|NT 505
+|Additional Test Instances (per Instance)
+|
+|$ 3,966
+
+
+|=========================================================
+
+
+* * *
+
+[discrete]
+=== 4. Neo4j Discovery Bundle
+A small single-instance configuration for internal departmental applications.
+Neo4j Discovery Bundle basic configuration includes:
+
+a. 1 Production Instances (up to 4 Cores)
+
+b. 1 Test Instances (no Core limit)
+
+c. Standard Support: 10 x 5 / 24-hour response time, email
+
+d. Unlimited number of licensed developers.
+
+[width="90%",cols="50,100,100",options="header"]
+|=========================================================
+| MFR Part # | Product Name / Description | Annual Subscription Price
+|NT 201 | Neo4j Discovery Bundle | $ 29,741
+| NT 202 | Additional Production Capacity (per Core [single Instance only])
+|$ 6,609
+|NT 203
+|Additional Test Instances (per Instance)
+| $ 4,957
+
+|=========================================================
+
+
+* * *
+
+
+
+
+
+
+
+
+Feel free to contact me directly via email at jmsuhy@igovsol.com  if you have questions, comments,
+or just want to talk about Neo4j in general.
+
+We are always available.
+
