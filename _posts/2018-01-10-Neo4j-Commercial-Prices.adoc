@@ -38,9 +38,9 @@ More specifically, if the reseller you purchase a commercial package from can't 
 It is very important to understand that Neo4j production support is only for Neo4j,
 not the other technologies in your stack!  
 
-Many graph projects have many components in their stack not just Neo4j. For example many projects use elasticsearch, apache kafka, custom client side UIs, micro services, etc.  It makes no sense to purchase production support for Neo4j but leave everything else unsupported. Yes many people don't think about this until it's too late!
+Many graph projects have multiple software applications in their stack not just Neo4j.  For many people commonly use elasticsearch, apache kafka, custom client side UIs, services, etc in their projects.   It makes no sense to purchase production support for Neo4j but leave everything else unsupported. 
 
-Buying support just for Neo4j would be like having a custom car built only getting a warrantee for your water pump! If your transmission fails - good luck!
+Buying support just for Neo4j would be like only getting support for the water pump of your new custom car you had built.  If your transmission fails - good luck!
 
 
 Are you starting to understand why you need a slick sales person to help give you some 'guidance' ?   
@@ -52,19 +52,21 @@ Are you starting to understand why you need a slick sales person to help give yo
 
 Finally, before jumping into the prices. 
 
-I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution.   Why would you need production support for something that has not yet been built. 
+I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.    Why would you need production support for something that has not yet been built.   
 
 Don't waste your budget on unnecessary production support for something not yet in production. Use your budget to develop your graph solution.
 
 ---
 
-A while back, Neo4j Inc allowed one of it's partners, and a great company I know well,
-to put Neo4j commercial packages
-on a https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
+So where does this pricing information come from?
 
-This action made the price list 'public domain'. 
+A while back, Neo4j Inc allowed one of it's partners, and a great company I know well and respect,
+to add Neo4j commercial subscriptions
+on their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
 
-The pricing information has been copied directly from this document. I just formatted it to make it easier to read. 
+This instantly made the pricing information 'public domain'. 
+
+The pricing information below has been copied directly from the GSA Schedule contract mentioned above.  I just formatted it to make it easier to read. 
 
 
 
