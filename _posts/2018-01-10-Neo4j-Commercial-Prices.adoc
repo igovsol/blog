@@ -1,7 +1,7 @@
 = Neo4j Enterprise Commercial Prices
 // :hp-image: /covers/cover.png
 :published_at: 2018-01-10
-:hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source
+:hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source, commercial pricing, commercial
 :linkattrs:
 :hp-alt-title: Neo4j Commercial Prices
 
@@ -9,52 +9,41 @@
 This post gives you an idea of just how expensive Neo4j Enterprise really is and what you get for all that money.  
 
 Finding Neo4j Enterprise commercial prices is extremely difficult. 
+Neo4j Inc keeps this information under close guard, and is only released under the 'guidance' of a sales person. 
 
-Neo4j Inc keeps this information under close guard, and for good reason which you will see as you read on.
+To understand why, you have to understand a few things about Neo4j Enterprise.
 
 ---
 
-To understand why pricing is kept under close guard, and is only released under the 'guidance' of a sales person,
-you have to understand a few things about Neo4j Enterprise.
-
-
 Neo4j Enterprise is available under a dual license commercial or open source license.
 
-You can choose pay for a yearly commercial subscription or just use the software for free under the open source license forever.  
+You can choose pay for a yearly commercial subscription, or use it for free.  If you purchase a commercial subscription you get something called a 'commercial license'.  If you don't have a commercial license, then the license simply defaults to the standard open source AGPLv3 license. 
 
-You heard me right, Neo4j Enterprise is also available for free under the standard open source AGPLv3 license.  
+You heard me right!
 
-You get all the enterprise features such as high availability clustering! 
+There is no catch, the open source licensed Neo4j Enterprise server is the same physical core software as the commercially licensed version, the license is just different. 
 
-Neo4j Enterprise server is the same physical core software - the license is just different.  
+You can use Neo4j Enterprise under it's open source license in any environment , including production, and yes you CAN use it in closed source projects!   
 
+My next post will address the AGPL mis-information that is floating around on this subject. 
 
-You are free to use as many cores or instances as your heart desires!  Remember this when you are looking at the pricing information below.
+The US Federal government is already using Neo4j Enterprise with it's open source license in a closed source projects.  
 
-You can use it in any environment including production, and yes you CAN use it in closed source projects!  (My next post addresses the AGPL mis-information that is floating around on this subject.)
+The commercial license is actually more restrictive for most use-cases so what are you really paying for when you get a Neo4j Enterprise commercial subscription? 
 
-The US Federal government is already using Neo4j Enterprise with it's open source license in a closed source project. I know this because I am part of the project and support the entire technology stack, not just Neo4j.
-
-
-So what exactly are you paying for when you get a Neo4j Enterprise commercial package? 
-
-Well, you are basically paying for production email and phone support for Neo4j.  
+Well, you are basically paying for production email and phone support for Neo4j.   
 
 More specifically, if the reseller you purchase a commercial package from can't answer a support request, Neo4j Inc can help the reseller.  
 
 Keep in mind that this production support is only for Neo4j,
 not the other technologies in your stack.   
 
-Many graph projects have many components in their stack, not just Neo4j.
+Many graph projects have many components in their stack not just Neo4j. For example many projects use elasticsearch, apache kafka, custom client side UIs, micro services, etc.  It makes no sense to purchase production support for Neo4j but leave everything else unsupported. Yes many people don't think about this until it's too late!
 
-Other common software includes elastic search, kafka, custom client side UI, , custom micro services, etc.  It makes no sense to get a commercial subscription for Neo4j and leave everything else unsupported.
-
-Buying support just for Neo4j would be like having a custom car built for you and only getting a warrantee for your water pump!
-
-If your transmission fails - good luck with that!
+Buying support just for Neo4j would be like having a custom car built only getting a warrantee for your water pump! If your transmission fails - good luck!
 
 
-Are you starting to understand why you need a slick sales person to help give you 'guidance'?   
+Are you starting to understand why you need a slick sales person to help give you some 'guidance' ?   
 
 
 
@@ -65,12 +54,17 @@ Finally, before jumping into the prices.
 
 I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution.   Why would you need production support for something that has not yet been built. 
 
-Use your budget to develop your graph solution.
+Don't waste your budget on unnecessary production support for something not yet in production. Use your budget to develop your graph solution.
 
-Don't waste it on unnecessary production support for something not yet in production. 
+---
 
-Now that you are a little more educated on your Neo4j Enterprise options,
-lets jump into the most current public available Neo4j Enterprise commercial prices.
+A while back, Neo4j Inc allowed one of it's partners, and a great company I know well,
+to put Neo4j commercial packages
+on a https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
+
+This action made the price list 'public domain'. 
+
+The pricing information has been copied directly from this document. I just formatted it to make it easier to read. 
 
 
 
@@ -80,7 +74,7 @@ lets jump into the most current public available Neo4j Enterprise commercial pri
 
 == Neo4j Enterprise Commercial Pricing
 
-Information copied from GSA SCHEDULE.
+
 
 
 
