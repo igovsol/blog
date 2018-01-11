@@ -32,7 +32,7 @@ It is very important to understand that Neo4j production support only covers Neo
 
 If you need production support for your project, it makes no sense to purchase production support for Neo4j while leaving all the other software unsupported.
 
-Buying support for Neo4j would be like only getting support for the water pump of a new custom car you had built.  If its transmission fails - good luck!
+Buying support for Neo4j would be like only getting support for the water pump of a new custom car you had built.  If its transmission fails - good luck!   
 
 
 
@@ -44,7 +44,7 @@ Finally, before jumping into the prices.
 
 I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.    Why would you need production support for something that has not yet been built.   
 
-Don't waste your budget on unnecessary production support for something not yet in production. Use your budget to develop your graph solution.
+Don't waste your budget on unnecessary production support for something not yet in production. Use your budget to develop your graph solution.  We would be happy to help you build a solution if you need help.
 
 ---
 
@@ -54,7 +54,7 @@ A while back, Neo4j Inc allowed one of it's partners, and a great company I know
 to add Neo4j commercial subscriptions
 on their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
 
-This instantly made the pricing information 'public domain'. 
+This instantly made the pricing information 'public domain' which is why I can post this information. 
 
 The pricing information below has been copied directly from the GSA Schedule contract mentioned above.  I just formatted it to make it easier to read. 
 
@@ -65,9 +65,6 @@ The pricing information below has been copied directly from the GSA Schedule con
 [discrete]
 
 == Neo4j Enterprise Commercial Pricing
-
-
-
 
 
 GSA Schedule 70 pricing for SIN 132-32 is discounted for the first year at a percentage off of the commercial list price. All future price increases shall adhere to the EPA clause GSAR 552.216-70 Economic Price Adjustment for compliance with the GSA terms and conditions of this Schedule 70 Contract Award.
