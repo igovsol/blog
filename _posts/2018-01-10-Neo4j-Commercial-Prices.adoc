@@ -4,46 +4,36 @@
 :hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source, commercial pricing, commercial
 :linkattrs:
 :hp-alt-title: Neo4j Commercial Prices
+ 
+Neo4j Inc keeps it's pricing information under close guard and is only released under the 'guidance' of a sales person.
 
-
-This post gives you an idea of just how expensive Neo4j Enterprise really is and what you get for all that money.  
-
-Finding Neo4j Enterprise commercial prices is extremely difficult. 
-Neo4j Inc keeps this information under close guard, and is only released under the 'guidance' of a sales person. 
-
-To understand why, you have to understand a few things about Neo4j Enterprise.
+To understand why this is the case, you have to understand a few things about Neo4j Enterprise.
 
 ---
 
-Neo4j Enterprise is available under a dual license model. You have the choice of using it under a commercial or the open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]
+Neo4j Enterprise is available under a dual license model. You have the choice of using it with either a commercial or the open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]
 
-You can choose pay for a yearly commercial subscription, or use it for free.  If you purchase a commercial subscription you get something called a 'commercial license'.  If you don't have a commercial license, then the license simply defaults to the standard open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. 
+The commercial license is included with paid commercial subscriptions.
 
-You heard me right!
+If you don't have a commercial license, then Neo4j Enterprise simply defaults to the standard open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. 
 
-There is no catch, the open source licensed Neo4j Enterprise server is the same physical core software as the commercially licensed version, the license is just different. 
 
-You can use Neo4j Enterprise under it's open source license in any environment , including production, and yes you CAN use it in closed source projects!   
+You can use Neo4j Enterprise with it's open source license in any environment , including production, and yes you CAN use it in closed source projects!  There are no core or instance limitations if you use it under the open source license. 
 
 My next post will address the Neo4j AGPL mis-information that is floating around on this subject. 
 
-The US Federal government is already using Neo4j Enterprise in production, with no core or instance limitations, under the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] in closed source projects.  
+The US Federal government is already using Neo4j Enterprise in production, with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] in closed source projects.  
 
-The commercial license is actually more restrictive for most use-cases so what are you really paying for when you get a Neo4j Enterprise commercial subscription? 
+The commercial license is actually more restrictive in most scenarios, so what are you really paying for when you purchase a Neo4j Enterprise commercial subscription? 
 
-Well, you are basically paying for production email and phone support for Neo4j.   
+You are basically paying for production email and phone support for Neo4j.    
 
-More specifically, if the reseller you purchase a commercial package from can't answer a support request, Neo4j Inc can help the reseller.  
+It is very important to understand that Neo4j production support only covers Neo4j. It does not cover any of the other software you use in your project such as ElasticSearch, Kafka, client side UI, micro-services, or custom applications. I.E. It only covers a single component of your technology stack.
 
-It is very important to understand that Neo4j production support is only for Neo4j,
-not the other technologies in your stack!  
+If you need production support for your project, it makes no sense to purchase production support for Neo4j while leaving all the other software unsupported.
 
-Many graph projects have multiple software applications in their stack not just Neo4j.  For many people commonly use elasticsearch, apache kafka, custom client side UIs, services, etc in their projects.   It makes no sense to purchase production support for Neo4j but leave everything else unsupported. 
+Buying support for Neo4j would be like only getting support for the water pump of a new custom car you had built.  If its transmission fails - good luck!
 
-Buying support just for Neo4j would be like only getting support for the water pump of your new custom car you had built.  If your transmission fails - good luck!
-
-
-Are you starting to understand why you need a slick sales person to help give you some 'guidance' ?   
 
 
 
