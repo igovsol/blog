@@ -48,7 +48,7 @@ This would be like only buying support for the alternator of a new custom car yo
 
 Finally, before jumping into the prices. 
 
-I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.    
+I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you are in development.    
 
 Why would you need production support for something that has not yet been built.  
 
