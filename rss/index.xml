@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jan 2018 02:04:53 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Enterprise Commercial Prices]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jan 2018 03:08:20 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Enterprise Commercial Prices]]></title><description><![CDATA[<div class="paragraph">
 <p>Are you looking to get your hands on actual Neo4j Enterprise commercial pricing information?  If so, this post is for you.</p>
 </div>
 <div class="paragraph">
@@ -49,7 +49,7 @@
 <p>Finally, before jumping into the prices.</p>
 </div>
 <div class="paragraph">
-<p>I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.</p>
+<p>I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you are in development.</p>
 </div>
 <div class="paragraph">
 <p>Why would you need production support for something that has not yet been built.</p>
