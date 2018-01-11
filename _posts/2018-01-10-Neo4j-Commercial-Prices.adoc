@@ -4,10 +4,14 @@
 :hp-tags: Neo4j, GraphDatabase, Neo4j Enterprise, open source, commercial pricing, commercial
 :linkattrs:
 :hp-alt-title: Neo4j Commercial Prices
+  
  
-Neo4j Inc keeps it's pricing information under close guard and is only released under the 'guidance' of a sales person.
+Are you looking to get your hands on actual Neo4j Enterprise commercial pricing information?  If so, this post is for you.   
+
+Neo4j Inc keeps it's pricing information under close guard and only releases it under the close 'guidance' of a sales person.  
 
 To understand why this is the case, you have to understand a few things about Neo4j Enterprise.
+
 
 ---
 
