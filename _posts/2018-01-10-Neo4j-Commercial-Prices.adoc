@@ -13,26 +13,28 @@ To understand why this is the case, you have to understand a few things about Ne
 
 Neo4j Enterprise is available under a dual license model. You have the choice of using it with either a commercial or the open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]
 
-The commercial license is included with paid commercial subscriptions.
+The commercial license is included when you purchase a paid commercial annual subscription. 
 
 If you don't have a commercial license, then Neo4j Enterprise simply defaults to the standard open source https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. 
 
 
-You can use Neo4j Enterprise with it's open source license in any environment , including production, and yes you CAN use it in closed source projects!  There are no core or instance limitations if you use it under the open source license. 
+You can use Neo4j Enterprise with it's open source license in any environment , including production, and yes you CAN use it in closed source projects!  
 
-My next post will address the Neo4j AGPL mis-information that is floating around on this subject. 
+There are no core or instance limitations when you use Neo4j Enterprise with it's open source license.  Commercial subscriptions place limits on cores and instances, just look at the pricing to see.
 
-The US Federal government is already using Neo4j Enterprise in production, with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"] in closed source projects.  
+My next post will address a lot of Neo4j AGPL mis-information that has been circulating.
+
+The US Federal government is already using Neo4j Enterprise in production, closed source projects with the https://www.gnu.org/licenses/agpl-3.0.en.html[AGPLv3 license, window="_blank"]. 
 
 The commercial license is actually more restrictive in most scenarios, so what are you really paying for when you purchase a Neo4j Enterprise commercial subscription? 
 
 You are basically paying for production email and phone support for Neo4j.    
 
-It is very important to understand that Neo4j production support only covers Neo4j. It does not cover any of the other software you use in your project such as ElasticSearch, Kafka, client side UI, micro-services, or custom applications. I.E. It only covers a single component of your technology stack.
+It is very important to understand that Neo4j production support only covers Neo4j. It does not cover any of the other software you use in your project such as ElasticSearch, Kafka, Postgresql, client side UI apps, micro-services, or custom applications.  I.E. It only covers a single component of your technology stack.
 
-If you need production support for your project, it makes no sense to purchase production support for Neo4j while leaving all the other software unsupported.
+If you need production support for your project, it makes no sense to only purchase production support for Neo4j while leaving all the other software unsupported.
 
-Buying support for Neo4j would be like only getting support for the water pump of a new custom car you had built.  If its transmission fails - good luck!   
+This would be like only buying support for the alternator of a new custom car you had built.  If its transmission fails - good luck!  You want support to cover the entire car.
 
 
 
@@ -42,24 +44,31 @@ Buying support for Neo4j would be like only getting support for the water pump o
 
 Finally, before jumping into the prices. 
 
-I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.    Why would you need production support for something that has not yet been built.   
+I want to point out that in most scenarios, purchasing a Neo4j Enterprise commercial subscription makes no sense if you have not yet developed your solution. I.E. If you are in development.    
 
-Don't waste your budget on unnecessary production support for something not yet in production. Use your budget to develop your graph solution.  We would be happy to help you build a solution if you need help.
+Why would you need production support for something that has not yet been built.  
+
+Don't waste your budget on production support for something not yet even built or in production.  
+
+Use your budget to develop your solution.  
+
+Of course, we would be happy to help you build and support your solution. 
 
 ---
 
 So where does this pricing information come from?
 
-A while back, Neo4j Inc allowed one of it's partners, and a great company I know well and respect,
+A while back, Neo4j Inc allowed one of it's partners, a company I highly respect,  
 to add Neo4j commercial subscriptions
-on their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
+to their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
 
-This instantly made the pricing information 'public domain' which is why I can post this information. 
+Adding this to the GSA contract had the side effect of making this pricing information 'public domain' , which is why I can post it.
 
-The pricing information below has been copied directly from the GSA Schedule contract mentioned above.  I just formatted it to make it easier to read. 
+The pricing information below has been copied directly from the GSA Schedule contract mentioned above.   I just formatted it to make it easier to read. 
 
 
 
+---
 
 
 [discrete]
@@ -69,7 +78,7 @@ The pricing information below has been copied directly from the GSA Schedule con
 
 GSA Schedule 70 pricing for SIN 132-32 is discounted for the first year at a percentage off of the commercial list price. All future price increases shall adhere to the EPA clause GSAR 552.216-70 Economic Price Adjustment for compliance with the GSA terms and conditions of this Schedule 70 Contract Award.
 
-Neo4j Bundles are available by Annual Subscription. All prices are Annual Subscription prices.
+Neo4j Bundles are available by Annual Subscription.  All prices are Annual Subscription prices.
 
 The Neo4j database runtime is called an “Instance”. Clusters comprise multiple instances: normally three or more. Instances normally run on different machines / OSs, although multiple instances can be run on a single machine / OS. Each Neo4j instance runs inside of a corresponding Java Virtual Machine (JVM) instance.
 
@@ -245,14 +254,12 @@ d. Unlimited number of licensed developers.
 * * *
 
 
-
-
-
-
-
-
 Feel free to contact me directly via email at jmsuhy@igovsol.com  if you have questions, comments,
 or just want to talk about Neo4j in general.
 
-We are always available.
+
+
+
+
+
 
