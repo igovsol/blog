@@ -52,7 +52,7 @@ Don't waste your budget on production support for something not yet even built o
 
 Use your budget to develop your solution.  
 
-Of course, we would be happy to help you build and support your solution. 
+Of course, we would be happy to help you build and support your graph solution. 
 
 ---
 
@@ -62,9 +62,11 @@ A while back, Neo4j Inc allowed one of it's partners, a company I highly respect
 to add Neo4j commercial subscriptions
 to their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
 
-Adding this to the GSA contract had the side effect of making this pricing information 'public domain' , which is why I can post it.
+This made the pricing information 'public domain' , which is why I can post it.
 
-The pricing information below has been copied directly from the GSA Schedule contract mentioned above.   I just formatted it to make it easier to read. 
+The pricing information below has been copied directly from the GSA Schedule contract mentioned above.   
+
+I just formatted it to make it easier to read. 
 
 
 
