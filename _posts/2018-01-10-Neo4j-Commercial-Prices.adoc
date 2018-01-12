@@ -66,7 +66,7 @@ A while back, Neo4j Inc allowed one of it's partners, a company I highly respect
 to add Neo4j commercial subscriptions
 to their https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing[ GSA schedule 70 contract, window="_blank" ].
 
-This made the pricing information p , which is why I can post it.
+This made the pricing information public , which is why I can post it.
 
 The pricing information below has been copied directly from the GSA Schedule contract mentioned above.   
 
