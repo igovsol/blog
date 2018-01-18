@@ -7,7 +7,7 @@
 // :hp-alt-title: My English Title
 
 
-https://graphaware.com/[GraphAware, window="_blank"] 
+https://graphaware.com/[GraphAware, window="_blank"]
 has a https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html[great blog post, window="_blank"] that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.
 
 The docker-compose.yml file they use for this post uses the
@@ -17,7 +17,7 @@ This may be a problem for you as Neo4j's official docker images
 use the commercial license and requires you to accept a https://github.com/neo4j/docker-neo4j-publish/blob/9a175bdb484967c609c5c369256b866a577f86b3/3.3.1/enterprise/docker-entrypoint.sh[license agreement, window="_blank"] which includes the following statement:
 
 ----
-Use of this Software without a proper commercial license 
+Use of this Software without a proper commercial license
 with Neo4j Inc. or its affiliates is prohibited.
 ----
 
@@ -34,9 +34,12 @@ image::docker-compose-diff.png[]
 
 
 
-Simply use https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml[this docker-compose.yml,window="_blank"] instead of the one referenced in the article and you are good to go! 
+Simply use https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml[this docker-compose.yml,window="_blank"] instead of the one referenced in the article and you are good to go!
 
 Checkout the https://graphaware.com/blog/[GraphAware blog, window="_blank"] for more great posts.
+
+I want to point out that my company iGov Inc,
+does not have any relationship with Neo4j Inc or GraphAware. 
 
 Enjoy the post!
 
