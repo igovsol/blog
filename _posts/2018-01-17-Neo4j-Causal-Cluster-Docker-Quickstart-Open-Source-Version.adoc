@@ -1,0 +1,36 @@
+= Neo4j Causal Cluster Docker Quickstart : Open Source Version
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2018-01-17
+:hp-tags: graphaware, neo4j, enterprise, docker, causal clustering
+// :hp-alt-title: My English Title
+
+
+https://graphaware.com/[GraphAware, window="_blank"] has a https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html[great blog post, window="_blank"] that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.
+
+The docker-compose.yml file they use for this post uses the
+official Neo4j Enterprise docker image.
+This may be a problem for you as Neo4j's official docker images
+use the commercial license and requires you to accept a license agreement!
+
+NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+
+https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html[You can read more about this here, window="_blank"].
+
+
+
+I simply https://github.com/igovsol/neo4j-casual-cluster-quickstart[forked the quick start GitHub repository, window="_blank"]  and updated the https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml[docker-compose.yml,window="_blank"] file to use the free open source binaries that we compile from the official Neo4j GitHub repository for US government agencies.
+
+You can https://github.com/igovsol/neo4j-casual-cluster-quickstart/commit/1575fd5b65666a3e7217707d108ced39d5c0f75b#diff-4e5e90c6228fd48698d074241c2ba760[view the changes made here ,window="_blank"].
+
+image::docker-compose-diff.png[]
+
+
+
+Simply use https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml[this docker-compose.yml,window="_blank"] instead of the one referenced in the article.
+
+As always, I am impressed by the GraphAware team's knowledge!
+
+Enjoy the post!
+
+https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html
