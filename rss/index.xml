@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 03:48:17 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 17:27:40 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
 <p><a href="https://graphaware.com/" target="_blank">GraphAware</a>
 has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" target="_blank">great blog post</a> that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.</p>
 </div>
@@ -35,6 +35,10 @@ with Neo4j Inc. or its affiliates is prohibited.</pre>
 </div>
 <div class="paragraph">
 <p>Checkout the <a href="https://graphaware.com/blog/" target="_blank">GraphAware blog</a> for more great posts.</p>
+</div>
+<div class="paragraph">
+<p>I would like to point out that my company iGov Inc,
+does not have any relationship with Neo4j Inc or GraphAware.</p>
 </div>
 <div class="paragraph">
 <p>Enjoy the post!</p>
@@ -419,7 +423,13 @@ or just want to talk about Neo4j in general.</p>
 <p>Neo4j Enterprise is still open source under it&#8217;s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
 </div>
 <div class="paragraph">
-<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
+<p>Neo4j Enterprise 'binaries’ are simply the compiled and packaged Neo4j distributions you download and run on your computer, server, container, etc.</p>
+</div>
+<div class="paragraph">
+<p>For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a>
+for the linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package.
+(The links above point to the binaries iGov Inc compiled and packaged using the source code found at the Neo4j Github repository.
+  By default it is packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
 </div>
 <div class="paragraph">
 <p>Why has Neo4j Inc made it harder to access the open source enterprise binaries?</p>
@@ -457,7 +467,7 @@ or just want to talk about Neo4j in general.</p>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into the binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn&#8217;t advertised for obvious reasons.</p>
+<p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into the official binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn&#8217;t advertised for obvious reasons.</p>
 </div>
 <div class="paragraph">
 <p>Those who were using the official docker images or downloading the enterprise binary directly from dist.neo4j.org were in for a surprise when they were forced to accept commercial terms in order to access the distributions.</p>
@@ -556,10 +566,16 @@ available under AGPLv3.</pre>
 <p>We will have docker images up as well complete with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed packages.</p>
 </div>
 <div class="paragraph">
-<p>We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.</p>
+<p>We will also have the FISMA framework modules on GitHub soon, one of which turns back on intra-cluster encryption.</p>
 </div>
 <div class="paragraph">
-<p>You can download Neo4j Enterprise Distributions from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.   Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
+<p>You can download the  Neo4j Enterprise binaries with the open source license from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.</p>
+</div>
+<div class="paragraph">
+<p>We compile and package these using the source code from the official Neo4j GitHub repositories.</p>
+</div>
+<div class="paragraph">
+<p>Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
 </div>
 <div class="paragraph">
 <p>If you would were not aware that Neo4j Enterprise is open source just like it&#8217;s sibling 'Neo4j Community Edition', you can <a href="https://igovsol.com/downloads.html#neo4j-os-faqs" target="_blank">learn more here</a>.</p>

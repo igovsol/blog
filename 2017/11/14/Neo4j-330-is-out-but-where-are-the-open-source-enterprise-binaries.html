@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
-    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1510857689201" />
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1516296460169" />
     
     
     
@@ -76,7 +76,9 @@
         "@type": "Person",
         "name": "John Mark",
         "image": "https://avatars0.githubusercontent.com/u/5272174?v=4",
-        "url": "http://blog.igovsol.com/author/jmsuhy/"
+        "url": "http://blog.igovsol.com/author/jmsuhy/",
+        "sameAs": "https://igovsol.com",
+        "description": "Senior software developer and enterprise architect with a focus on introducing innovative open source technologies into the US federal government. "
     },
     "headline": "Neo4j 3.3.0 is out, but where are the open source enterprise binaries?",
     "url": "http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html",
@@ -100,7 +102,7 @@
     <article role="main" class="">
         <header>
             <a href="http://blog.igovsol.com" id="home_link">«</a>
-            <div class="meta"><time datetime="2017-11-14"><a href="http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html">November 14, 2017</a></time> <span class="count" id="js-reading-time"></span></div>
+            <div class="meta"><time datetime="2017-11-14"><a href="/">November 14, 2017</a></time> <span class="count" id="js-reading-time"></span></div>
             <h1>Neo4j 3.3.0 is out, but where are the open source enterprise binaries?</h1>
         </header>
 
@@ -109,7 +111,13 @@
 <p>Neo4j Enterprise is still open source under it&#8217;s <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>. However you may have noticed that you can no longer build the enterprise package binary from the source code or download the enterprise package binary with it&#8217;s free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a> from dist.neo4j.org.  Furthermore, if you use docker, <a href="https://github.com/neo4j/docker-neo4j-publish/commit/aa31654ee8544cd544b369d2646cf372086f7b70" target="_blank">you must now accept a 'commercial agreement’ before proceeding</a>.  In other words, official Neo4j docker images are no longer packaged with the free <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed binaries.</p>
 </div>
 <div class="paragraph">
-<p>Neo4j Enterprise 'binaries’ are simply the packaged Neo4j distributions you download and run on your computer, server, container, etc.   For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a> for the linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package. (The links above point to the binaries packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
+<p>Neo4j Enterprise 'binaries’ are simply the compiled and packaged Neo4j distributions you download and run on your computer, server, container, etc.</p>
+</div>
+<div class="paragraph">
+<p>For the 3.3.0 release the enterprise binary package file names would be <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-unix.tar.gz" target="_blank">neo4j-enterprise-3.3.0-unix.tar.gz</a>
+for the linux package and <a href="https://dist.igovsol.com/neo4j-enterprise-3.3.0-windows.zip" target="_blank">neo4j-enterprise-3.3.0-windows.zip</a> for the windows package.
+(The links above point to the binaries iGov Inc compiled and packaged using the source code found at the Neo4j Github repository.
+  By default it is packaged with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3 license</a>.)</p>
 </div>
 <div class="paragraph">
 <p>Why has Neo4j Inc made it harder to access the open source enterprise binaries?</p>
@@ -147,7 +155,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into the binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn&#8217;t advertised for obvious reasons.</p>
+<p><strong>Action 2</strong>:  Neo4j Inc slipped a commercial license into the official binaries found on their distribution site that is used for docker images.  Until now, if you wanted to download the Neo4j Enterprise binary from Neo4j Inc directly, you could have done so using the distribution site which is publically available. It just isn&#8217;t advertised for obvious reasons.</p>
 </div>
 <div class="paragraph">
 <p>Those who were using the official docker images or downloading the enterprise binary directly from dist.neo4j.org were in for a surprise when they were forced to accept commercial terms in order to access the distributions.</p>
@@ -246,10 +254,16 @@ available under AGPLv3.</pre>
 <p>We will have docker images up as well complete with the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPLv3</a> licensed packages.</p>
 </div>
 <div class="paragraph">
-<p>We will also have the FISMA framework modules on github soon, one of which turns back on intra-cluster encryption.</p>
+<p>We will also have the FISMA framework modules on GitHub soon, one of which turns back on intra-cluster encryption.</p>
 </div>
 <div class="paragraph">
-<p>You can download Neo4j Enterprise Distributions from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.   Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
+<p>You can download the  Neo4j Enterprise binaries with the open source license from our website at <a href="https://igovsol.com/downloads.html" class="bare">https://igovsol.com/downloads.html</a>.</p>
+</div>
+<div class="paragraph">
+<p>We compile and package these using the source code from the official Neo4j GitHub repositories.</p>
+</div>
+<div class="paragraph">
+<p>Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
 </div>
 <div class="paragraph">
 <p>If you would were not aware that Neo4j Enterprise is open source just like it&#8217;s sibling 'Neo4j Community Edition', you can <a href="https://igovsol.com/downloads.html#neo4j-os-faqs" target="_blank">learn more here</a>.</p>
@@ -267,7 +281,7 @@ available under AGPLv3.</pre>
                 <span aria-hidden="true" data-icon="S"></span>
                 <strong>Share</strong>
             </a>
-            <a href="http://twitter.com/share?text=Neo4j%203.3.0%20is%20out%2C%20but%20where%20are%20the%20open%20source%20enterprise%20binaries%3F&url=http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+            <a href="http://twitter.com/share?text=Neo4j%203.3.0%20is%20out%2C%20but%20where%20are%20the%20open%20source%20enterprise%20binaries%3F&url=http://blog.igovsol.com/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
                 <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
             </a>
         </menu>
@@ -281,19 +295,22 @@ available under AGPLv3.</pre>
                     <strong>Feed</strong>
                 </a>
 
-                
-               <div class="details">
-                   <h4><a href="http://blog.igovsol.com/author/jmsuhy/" class="url n">John Mark Suhy</a></h4>
-                   Senior software developer and enterprise architect with a focus on introducing innovative open source technologies into the US federal government.  Neo4j Certified Professional.
-                   <br /><br />
-                   Alexandria, VA<br>
-                   
-               </div>
+                <a href="http://blog.igovsol.com/author/jmsuhy/" class="photo">
+                    <span style="background-image: url('https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4');">
+                        <img src="https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4" alt="John Mark">
+                    </span>
+                </a>
+
+                <div class="details">
+                    <h4><a href="http://blog.igovsol.com/author/jmsuhy/" class="url n">John Mark</a></h4>
+                    Alexandria, VA<br>
+                    <a href="https://igovsol.com" class="js-remove-domain-schema">https://igovsol.com</a>
+                </div>
             </div>
 
             <div id="user_bio">
                 <div class="inner">
-                    
+                    Senior software developer and enterprise architect with a focus on introducing innovative open source technologies into the US federal government. 
                 </div>
             </div>
 
@@ -329,7 +346,7 @@ available under AGPLv3.</pre>
                     </div>
 
                     <div id="pinit-btn">
-                        <a href="//pinterest.com/pin/create/button/?url=http://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html&amp;description=Neo4j%203.3.0%20is%20out%2C%20but%20where%20are%20the%20open%20source%20enterprise%20binaries%3F-iGov%20Inc%20Neo4j%20Blog " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <a href="//pinterest.com/pin/create/button/?url=http://blog.igovsol.com/&amp;description=Neo4j%203.3.0%20is%20out%2C%20but%20where%20are%20the%20open%20source%20enterprise%20binaries%3F-iGov%20Inc%20Neo4j%20Blog " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
                         <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
                     </div>
                 </div>
