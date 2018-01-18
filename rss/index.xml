@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 03:12:21 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 03:48:17 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
 <p><a href="https://graphaware.com/" target="_blank">GraphAware</a>
 has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" target="_blank">great blog post</a> that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.</p>
 </div>
 <div class="paragraph">
 <p>The docker-compose.yml file they use for this post uses the
-official Neo4j Enterprise docker image.
-This may be a problem for you as Neo4j&#8217;s official docker images
-use the commercial license and requires you to accept a license agreement!</p>
+official Neo4j Enterprise docker image.</p>
 </div>
 <div class="paragraph">
-<p>NEO4J_ACCEPT_LICENSE_AGREEMENT=yes</p>
+<p>This may be a problem for you as Neo4j&#8217;s official docker images
+use the commercial license and requires you to accept a <a href="https://github.com/neo4j/docker-neo4j-publish/blob/9a175bdb484967c609c5c369256b866a577f86b3/3.3.1/enterprise/docker-entrypoint.sh" target="_blank">license agreement</a> which includes the following statement:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Use of this Software without a proper commercial license
+with Neo4j Inc. or its affiliates is prohibited.</pre>
+</div>
 </div>
 <div class="paragraph">
 <p><a href="https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" target="_blank">You learn more about what Neo4j Inc did here</a>.</p>

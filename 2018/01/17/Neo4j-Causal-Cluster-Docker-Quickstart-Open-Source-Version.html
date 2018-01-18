@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
-    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1516245141749" />
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1516247297937" />
     
     
     
@@ -114,12 +114,17 @@ has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart
 </div>
 <div class="paragraph">
 <p>The docker-compose.yml file they use for this post uses the
-official Neo4j Enterprise docker image.
-This may be a problem for you as Neo4j&#8217;s official docker images
-use the commercial license and requires you to accept a license agreement!</p>
+official Neo4j Enterprise docker image.</p>
 </div>
 <div class="paragraph">
-<p>NEO4J_ACCEPT_LICENSE_AGREEMENT=yes</p>
+<p>This may be a problem for you as Neo4j&#8217;s official docker images
+use the commercial license and requires you to accept a <a href="https://github.com/neo4j/docker-neo4j-publish/blob/9a175bdb484967c609c5c369256b866a577f86b3/3.3.1/enterprise/docker-entrypoint.sh" target="_blank">license agreement</a> which includes the following statement:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Use of this Software without a proper commercial license
+with Neo4j Inc. or its affiliates is prohibited.</pre>
+</div>
 </div>
 <div class="paragraph">
 <p><a href="https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" target="_blank">You learn more about what Neo4j Inc did here</a>.</p>
