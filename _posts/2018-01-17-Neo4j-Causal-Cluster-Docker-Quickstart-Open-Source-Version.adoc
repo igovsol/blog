@@ -12,10 +12,15 @@ has a https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html[gre
 
 The docker-compose.yml file they use for this post uses the
 official Neo4j Enterprise docker image.
-This may be a problem for you as Neo4j's official docker images
-use the commercial license and requires you to accept a license agreement!
 
-NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+This may be a problem for you as Neo4j's official docker images
+use the commercial license and requires you to accept a https://github.com/neo4j/docker-neo4j-publish/blob/9a175bdb484967c609c5c369256b866a577f86b3/3.3.1/enterprise/docker-entrypoint.sh[license agreement, window="_blank"] which includes the following statement:
+
+----
+Use of this Software without a proper commercial license 
+with Neo4j Inc. or its affiliates is prohibited.
+----
+
 
 https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html[You learn more about what Neo4j Inc did here, window="_blank"].
 
