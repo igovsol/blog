@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jan 2018 03:08:20 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Enterprise Commercial Prices]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 03:12:21 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
+<p><a href="https://graphaware.com/" target="_blank">GraphAware</a>
+has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" target="_blank">great blog post</a> that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.</p>
+</div>
+<div class="paragraph">
+<p>The docker-compose.yml file they use for this post uses the
+official Neo4j Enterprise docker image.
+This may be a problem for you as Neo4j&#8217;s official docker images
+use the commercial license and requires you to accept a license agreement!</p>
+</div>
+<div class="paragraph">
+<p>NEO4J_ACCEPT_LICENSE_AGREEMENT=yes</p>
+</div>
+<div class="paragraph">
+<p><a href="https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" target="_blank">You learn more about what Neo4j Inc did here</a>.</p>
+</div>
+<div class="paragraph">
+<p>I simply <a href="https://github.com/igovsol/neo4j-casual-cluster-quickstart" target="_blank">forked the quick start GitHub repository</a>  and updated the <a href="https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml" target="_blank">docker-compose.yml</a> file to use the free open source binaries that we compile from the official Neo4j GitHub repository for US government agencies.</p>
+</div>
+<div class="paragraph">
+<p>You can <a href="https://github.com/igovsol/neo4j-casual-cluster-quickstart/commit/1575fd5b65666a3e7217707d108ced39d5c0f75b#diff-4e5e90c6228fd48698d074241c2ba760" target="_blank">view the changes I made to the file here</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://blog.igovsol.com/images/docker-compose-diff.png" alt="docker compose diff.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Simply use <a href="https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml" target="_blank">this docker-compose.yml</a> instead of the one referenced in the article and you are good to go!</p>
+</div>
+<div class="paragraph">
+<p>Checkout the <a href="https://graphaware.com/blog/" target="_blank">GraphAware blog</a> for more great posts.</p>
+</div>
+<div class="paragraph">
+<p>Enjoy the post!</p>
+</div>
+<div class="paragraph">
+<p>Here is the link to the causal clustering docker post.
+<a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" class="bare">https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html</a></p>
+</div>]]></description><link>http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html</link><guid isPermaLink="true">http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html</guid><category><![CDATA[graphaware]]></category><category><![CDATA[neo4j]]></category><category><![CDATA[enterprise]]></category><category><![CDATA[docker]]></category><category><![CDATA[causal clustering]]></category><dc:creator><![CDATA[John Mark]]></dc:creator><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Neo4j Enterprise Commercial Prices]]></title><description><![CDATA[<div class="paragraph">
 <p>Are you looking to get your hands on actual Neo4j Enterprise commercial pricing information?  If so, this post is for you.</p>
 </div>
 <div class="paragraph">
@@ -73,7 +112,7 @@ to add Neo4j commercial subscriptions
 to their <a href="https://drive.google.com/file/d/0B7w76NCg0bmVd2dpcU5lTjBsQWs/view?usp=sharing" target="_blank">GSA schedule 70 contract</a>.</p>
 </div>
 <div class="paragraph">
-<p>This made the pricing information 'public domain' , which is why I can post it.</p>
+<p>This made the pricing information public , which is why I can post it.</p>
 </div>
 <div class="paragraph">
 <p>The pricing information below has been copied directly from the GSA Schedule contract mentioned above.</p>

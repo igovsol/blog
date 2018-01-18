@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Neo4j Causal Cluster Docker Quickstart : Open Source Version</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://blog.igovsol.com/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="//blog.igovsol.com/themes/igov/assets/css/screen.css?v=1516245141749" />
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://igovsol.com/vendor/bootstrap/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/font-awesome/css/font-awesome.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/animate/animate.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/owl.carousel/assets/owl.carousel.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/magnific-popup/magnific-popup.min.css">
+
+    		<!-- Theme CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-elements.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-blog.css">
+    		<link rel="stylesheet" href="https://igovsol.com/css/theme-shop.css">
+   
+
+    		<!-- Current Page CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/settings.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/layers.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/rs-plugin/css/navigation.css">
+    		<link rel="stylesheet" href="https://igovsol.com/vendor/circle-flip-slideshow/css/component.css">
+    
+    
+
+    		<!-- Skin CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/skins/skin-igov.css">
+
+    		<!-- Theme Custom CSS -->
+    		<link rel="stylesheet" href="https://igovsol.com/css/custom.css">
+
+    <link rel="canonical" href="http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="iGov Inc Neo4j Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Neo4j Causal Cluster Docker Quickstart : Open Source Version" />
+    <meta property="og:description" content="GraphAware has a great blog post that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker. The docker-compose.yml file they use for this post uses the official Neo4j Enterprise docker image. This may be a problem for you as Neo4j&amp;#8217;s official docker" />
+    <meta property="og:url" content="http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html" />
+    <meta property="article:published_time" content="2018-01-17T00:00:00.000Z" />
+    <meta property="article:tag" content="graphaware" />
+    <meta property="article:tag" content="neo4j" />
+    <meta property="article:tag" content="enterprise" />
+    <meta property="article:tag" content="docker" />
+    <meta property="article:tag" content="causal clustering" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Neo4j Causal Cluster Docker Quickstart : Open Source Version" />
+    <meta name="twitter:description" content="GraphAware has a great blog post that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker. The docker-compose.yml file they use for this post uses the official Neo4j Enterprise docker image. This may be a problem for you as Neo4j&amp;#8217;s official docker" />
+    <meta name="twitter:url" content="http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "iGov Inc Neo4j Blog",
+    "author": {
+        "@type": "Person",
+        "name": "John Mark",
+        "image": "https://avatars0.githubusercontent.com/u/5272174?v=4",
+        "url": "http://blog.igovsol.com/author/jmsuhy/",
+        "sameAs": "https://igovsol.com",
+        "description": "Senior software developer and enterprise architect with a focus on introducing innovative open source technologies into the US federal government. "
+    },
+    "headline": "Neo4j Causal Cluster Docker Quickstart : Open Source Version",
+    "url": "http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html",
+    "datePublished": "2018-01-17T00:00:00.000Z",
+    "keywords": "graphaware, neo4j, enterprise, docker, causal clustering",
+    "description": "GraphAware has a great blog post that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker. The docker-compose.yml file they use for this post uses the official Neo4j Enterprise docker image. This may be a problem for you as Neo4j&amp;#8217;s official docker"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="iGov Inc Neo4j Blog" href="http://blog.igovsol.com/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body class="post-template tag-graphaware tag-neo4j tag-enterprise tag-docker tag-causal-clustering  noimage">
+
+    
+
+
+    <article role="main" class="">
+        <header>
+            <a href="http://blog.igovsol.com" id="home_link">«</a>
+            <div class="meta"><time datetime="2018-01-17"><a href="http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html">January 17, 2018</a></time> <span class="count" id="js-reading-time"></span></div>
+            <h1>Neo4j Causal Cluster Docker Quickstart : Open Source Version</h1>
+        </header>
+
+        <div class="text" id="js-post-content">
+            <div class="paragraph">
+<p><a href="https://graphaware.com/" target="_blank">GraphAware</a>
+has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" target="_blank">great blog post</a> that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.</p>
+</div>
+<div class="paragraph">
+<p>The docker-compose.yml file they use for this post uses the
+official Neo4j Enterprise docker image.
+This may be a problem for you as Neo4j&#8217;s official docker images
+use the commercial license and requires you to accept a license agreement!</p>
+</div>
+<div class="paragraph">
+<p>NEO4J_ACCEPT_LICENSE_AGREEMENT=yes</p>
+</div>
+<div class="paragraph">
+<p><a href="https://blog.igovsol.com/2017/11/14/Neo4j-330-is-out-but-where-are-the-open-source-enterprise-binaries.html" target="_blank">You learn more about what Neo4j Inc did here</a>.</p>
+</div>
+<div class="paragraph">
+<p>I simply <a href="https://github.com/igovsol/neo4j-casual-cluster-quickstart" target="_blank">forked the quick start GitHub repository</a>  and updated the <a href="https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml" target="_blank">docker-compose.yml</a> file to use the free open source binaries that we compile from the official Neo4j GitHub repository for US government agencies.</p>
+</div>
+<div class="paragraph">
+<p>You can <a href="https://github.com/igovsol/neo4j-casual-cluster-quickstart/commit/1575fd5b65666a3e7217707d108ced39d5c0f75b#diff-4e5e90c6228fd48698d074241c2ba760" target="_blank">view the changes I made to the file here</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://blog.igovsol.com/images/docker-compose-diff.png" alt="docker compose diff.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Simply use <a href="https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quickstart/master/docker-compose.yml" target="_blank">this docker-compose.yml</a> instead of the one referenced in the article and you are good to go!</p>
+</div>
+<div class="paragraph">
+<p>Checkout the <a href="https://graphaware.com/blog/" target="_blank">GraphAware blog</a> for more great posts.</p>
+</div>
+<div class="paragraph">
+<p>Enjoy the post!</p>
+</div>
+<div class="paragraph">
+<p>Here is the link to the causal clustering docker post.
+<a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" class="bare">https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html</a></p>
+</div>
+        </div>
+
+        <menu>
+            <a href="" id="btn_share" class="btn" title="Share">
+                <span aria-hidden="true" data-icon="S"></span>
+                <strong>Share</strong>
+            </a>
+            <a href="http://twitter.com/share?text=Neo4j%20Causal%20Cluster%20Docker%20Quickstart%20%3A%20Open%20Source%20Version&url=http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+            </a>
+        </menu>
+
+
+        <footer class="post-footer" role="contentinfo">
+
+            <div class="vcard">
+                <a href="http://blog.igovsol.com/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                    <span aria-hidden="true" data-icon=")"></span>
+                    <strong>Feed</strong>
+                </a>
+
+                <a href="http://blog.igovsol.com/author/jmsuhy/" class="photo">
+                    <span style="background-image: url('https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4');">
+                        <img src="https://avatars0.githubusercontent.com/u/5272174?v&#x3D;4" alt="John Mark">
+                    </span>
+                </a>
+
+                <div class="details">
+                    <h4><a href="http://blog.igovsol.com/author/jmsuhy/" class="url n">John Mark</a></h4>
+                    Alexandria, VA<br>
+                    <a href="https://igovsol.com" class="js-remove-domain-schema">https://igovsol.com</a>
+                </div>
+            </div>
+
+            <div id="user_bio">
+                <div class="inner">
+                    Senior software developer and enterprise architect with a focus on introducing innovative open source technologies into the US federal government. 
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+    </article>
+
+    <div id="share_modal">
+        <div class="wrap">
+            <div class="inner">
+                <header>
+                    Share
+                    <a href="" class="close" title="Close">&times;</a>
+                </header>
+
+                <div class="roon-share-links">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                    <div id="fb-elems">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+                    </div>
+
+                    <div id="pinit-btn">
+                        <a href="//pinterest.com/pin/create/button/?url=http://blog.igovsol.com/2018/01/17/Neo4j-Causal-Cluster-Docker-Quickstart-Open-Source-Version.html&amp;description=Neo4j%20Causal%20Cluster%20Docker%20Quickstart%20%3A%20Open%20Source%20Version-iGov%20Inc%20Neo4j%20Blog " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+            function get_text(el) {
+                ret = "";
+                var length = el.childNodes.length;
+                for(var i = 0; i < length; i++) {
+                    var node = el.childNodes[i];
+                    if(node.nodeType != 8) {
+                        ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+                    }
+                }
+                return ret;
+            }
+            function reading_time () {
+                var post_content = document.getElementById('js-post-content');
+                if (post_content) {
+                    var words = get_text(post_content),
+                        count = words.split(/\s+/).length,
+                        read_time = Math.ceil((count / 150)),
+                        read_time_node = document.createTextNode(read_time + ' min read');
+                    document.getElementById('js-reading-time').appendChild(read_time_node);
+                }
+            }
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+            reading_time();
+        }
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+        <script>
+            $(function(){
+                var share_modal = $("#share_modal"),
+                    update_social_links = true;
+
+                $("#btn_share").click(function(){
+                    var that = $(this);
+                    share_modal.fadeIn(200);
+                    return false;
+                });
+
+                share_modal.click(function(e){
+                    if (e.target.className == "wrap" || e.target.id == "share_modal") {
+                        share_modal.fadeOut(200);
+                    }
+                    return false;
+                });
+
+                share_modal.find("div.inner > header > a.close").click(function(){
+                    share_modal.fadeOut(200);
+                    return false;
+                });
+            });
+        </script>
+
+
+
+</body>
+</html>
