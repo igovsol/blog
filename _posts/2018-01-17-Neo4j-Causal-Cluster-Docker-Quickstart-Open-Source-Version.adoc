@@ -38,8 +38,8 @@ Simply use https://raw.githubusercontent.com/igovsol/neo4j-casual-cluster-quicks
 
 Checkout the https://graphaware.com/blog/[GraphAware blog, window="_blank"] for more great posts.
 
-I want to point out that my company iGov Inc,
-does not have any relationship with Neo4j Inc or GraphAware. 
+I would like to point out that my company iGov Inc,
+does not have any relationship with Neo4j Inc or GraphAware.
 
 Enjoy the post!
 
