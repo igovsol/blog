@@ -133,7 +133,7 @@ You can download the  Neo4j Enterprise binaries with the open source license fro
 
 We compile and package these using the source code from the official Neo4j GitHub repositories.
 
-Federal agencies should email us at neo4j@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.
+Federal agencies should email us at support@igovsol.com to get their AWS GovCloud download links which should be whitelisted for most agencies.
 
 If you would were not aware that Neo4j Enterprise is open source just like it's sibling 'Neo4j Community Edition', you can https://igovsol.com/downloads.html#neo4j-os-faqs[learn more here , window="_blank"].
 
