@@ -1,4 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Jan 2018 17:27:40 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 10 Jan 2020 01:08:42 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Thinking about becoming a Neo4j partner?  You may want to read this..]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this post I will explain some important issues you must consider before becoming a Neo4j partner.</p>
+</div>
+<div class="paragraph">
+<p>Hopefully, this information will help you make an informed decision, and minimize the risk to your company and your clients.</p>
+</div>
+<div class="paragraph">
+<p>If you want to view the entire agreement this post discusses , you can find it in the link below.</p>
+</div>
+<div class="paragraph">
+<p>Full agreement:  <a href="https://public.igovsol.com/neo4j-court-records/neo4j-partnership-agreement-highlighted.pdf" target="_blank">Neo4j Solution Partner Agreement</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview">Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Becoming a solution 'partner' involves signing a partner agreement and paying a yearly fee.
+You will understand why I quoted 'partner' soon.</p>
+</div>
+<div class="paragraph">
+<p>The agreement has terms which effectively prevent you from working with Neo4j open source licenses while you are a partner and for 3 years after your partnership ends!</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s important to understand what you are agreeing to, especially as Neo4j forks such as <a href="https://graphfoundation.org/ongdb/" target="_blank">Open Native Graph Database (ONgDB)</a> are gaining traction.</p>
+</div>
+<div class="paragraph">
+<p>For example, in the US government, you may be at a severe disadvantage in terms of competitive bid pricing for projects involving Neo4j open source licenses and forks because of these limitations.</p>
+</div>
+<div class="paragraph">
+<p>Not only are the open source forks such as ONgDB already proving themselves in production in the federal government,
+there are well known and trusted contractors with a great deal of past performance supporting these open source distributions.  They are not subject to the terms discussed, and can therefore do not have to consider Neo4j expensive commercial licenses in their project bids.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terms_to_watch_out_for">Terms to watch out for</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>1) The terms below prevent you from using Neo4j open source distributions during your partnership and 3 years after your stop being a partner.</strong></p>
+</div>
+<div class="paragraph">
+<p>During your partnership and for 3 years after your partnership ends you can&#8217;t:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use Neo4j open source distributions (including popular forks such as ONgDB).</p>
+</li>
+<li>
+<p>You can&#8217;t offer services such as consulting, training, technical support for clients for these open source licensed distributions.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The investment you will make into the Neo4j ecosystem, and all the experience, past performance, knowledge you gain will be lost
+if these terms kick in.</p>
+</div>
+<div class="paragraph">
+<p>Keep in mind that Neo4j Inc can terminate your partnership for any reason, approach your clients, and more as you will see further in the agreement.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>4.3.1 During the term of this Agreement, <strong>Partner may not use or run on any of Partner’s hardware,
+or have deployed for internal use, any Neo Technology Community Edition Products
+for commercial or production use.</strong>
+In no event shall Partner reverse engineer, distribute or otherwise use the Products for its own internal use.
+There are no implied rights. Partner will not fork or bifurcate the source code for any Neo Technology Community Edition Products into a separately
+maintained source code repository so that development done on the original code requires manual work to be transferred to the forked
+software or so that the forked software starts to have features not present in the original software.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre><strong>4.3.2 During the term of this Agreement and up until thirty six (36) months after the termination or expiration of this Agreement,
+Partner may not develop, market, distribute or offer any services related to any Neo Technology Community Edition Products,
+derivative works of such products, or any Partner software code made to work with Neo Technology Community Edition Products
+(including, without limitation, hosting services, training, technical support, configuration and customization services, etc.).</strong></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What are "Neo Technology Community Edition Products" you ask?
+They are any Neo4j products used with the free open source licenses.</p>
+</div>
+<div class="paragraph">
+<p>If they had been clear and just said "open source licensed products", would you agree to these terms?</p>
+</div>
+<div class="paragraph">
+<p><strong>2) The partner agreement can be canceled for any reason by Neo4j Inc</strong></p>
+</div>
+<div class="paragraph">
+<p>Yes, you read this right.  Neo4j Inc can terminate the partnership for any reason, even if you&#8217;ve done nothing wrong.</p>
+</div>
+<div class="paragraph">
+<p>When a partner agreement is terminated, the restrictions kick in:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can&#8217;t use or offer services / consulting /support for Neo4j open source distributions (and forks) for 3 years.</p>
+</li>
+<li>
+<p>You can&#8217;t talk to your clients about Neo4j anymore.</p>
+</li>
+<li>
+<p>Neo4j Inc can go around you and approach your clients directly for licensing and contracting.</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>7.2 Termination. This Agreement may be terminated by a party for cause immediately if (a) the other ceases to do business, or otherwise terminates its business operations; or (b) the other materially breaches any material provision of this Agreement and fails to cure such breach within thirty (30) days of written notice describing the breach.
+<strong>In addition, Neo Technology may terminate this Agreement at any time by providing Partner with ninety (90) days prior written notice.</strong> This Agreement may be terminated as set forth on Exhibit C!.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>7.3 Effect of Termination. Upon termination of this Agreement by either party (a) all rights and licenses of Partner hereunder will terminate and
+<strong>Partner shall cease all communications with End Users regarding the Products;</strong> and (b) each party will immediately return to the other party all Confidential Information in its possession, custody or control in whichever form held (including all
+copies or embodiments of the Confidential Information) and will cease using any trademarks, service marks and other designations of the other party; and (c) Partner shall pay to Neo Technology all outstanding fees. To remove all doubt, except as set forth in this Agreement,
+it is hereby clarified that Partner will not be entitled to any additional remuneration, or reimbursement of any expenses
+based on the expiration or termination of this Agreement. An addendum to this Agreement may specify additional effects of termination of this Agreement.
+<strong>After any termination of this Agreement,  Neo Technology shall not be restricted in any manner from licensing or contracting with End Users.</strong></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>3) You are not really a partner once you sign this agreement!</strong></p>
+</div>
+<div class="paragraph">
+<p>Yes, you heard that correctly!   Even though the agreement is clearly labeled "NEO4J SOLUTION PARTNER AGREEMENT",
+there is a term hidden way down in section 10 that says you are not really a partner.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>10.2  Relationship of Parties. This Agreement is not intended to create a relationship such as a partnership, franchise, joint venture, agency,
+or employment relationship. Neither party may act in a manner which expresses
+or implies a relationship <strong>other than that of independent contractor</strong>, nor bind the other party.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>4) Neo4j Inc may try to enforce these terms on your other companies or partners if the 'partnership' is terminated, which can for any reason</strong></p>
+</div>
+<div class="paragraph">
+<p>This has actually happened once already.</p>
+</div>
+<div class="paragraph">
+<p>Even though this partnership agreement executed on behalf of the company signing it, Neo4j has shown that they are willing
+to attempt applying these terms outside of the company who signed the agreement.  If you or your board members have other companies
+you may want to understand what they have done in the past.</p>
+</div>
+<div class="paragraph">
+<p>While you may prevail in court, you still have to deal with the legal headaches and costs associated with this type of behavior.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I&#8217;ve attempted to lay out some important considerations and information to assist you in making a more informed decision on becoming a Neo4j 'partner'.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m not saying that being a 'partner' is a bad thing, my goal is to share the knowledge I&#8217;ve acquired with fellow entrepreneurs</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Neo4j Partner Agreement:
+<a href="https://public.igovsol.com/neo4j-court-records/neo4j-partnership-agreement-highlighted.pdf" class="bare">https://public.igovsol.com/neo4j-court-records/neo4j-partnership-agreement-highlighted.pdf</a></p>
+</div>
+<div class="paragraph">
+<p>Note:
+I am not a lawyer, and the agreements referenced in this post may have changed. There could be other new terms I am not aware of and vice versa.</p>
+</div>
+</div>
+</div>]]></description><link>http://blog.igovsol.com/2020/01/09/Thinking-about-becoming-a-Neo4j-partner-You-may-want-to-read-this.html</link><guid isPermaLink="true">http://blog.igovsol.com/2020/01/09/Thinking-about-becoming-a-Neo4j-partner-You-may-want-to-read-this.html</guid><category><![CDATA[Neo4j]]></category><category><![CDATA[GraphDatabase]]></category><category><![CDATA[Neo4j Enterprise]]></category><category><![CDATA[open source]]></category><category><![CDATA[partner]]></category><dc:creator><![CDATA[John Mark]]></dc:creator><pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate></item><item><title><![CDATA[Neo4j Causal Cluster Docker Quickstart : Open Source Version]]></title><description><![CDATA[<div class="paragraph">
 <p><a href="https://graphaware.com/" target="_blank">GraphAware</a>
 has a <a href="https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html" target="_blank">great blog post</a> that shows you how to quickly get started with Neo4j Enterprise causal clustering using docker.</p>
 </div>
@@ -575,7 +756,7 @@ available under AGPLv3.</pre>
 <p>We compile and package these using the source code from the official Neo4j GitHub repositories.</p>
 </div>
 <div class="paragraph">
-<p>Federal agencies should email us at <a href="mailto:neo4j@igovsol.com">neo4j@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
+<p>Federal agencies should email us at <a href="mailto:support@igovsol.com">support@igovsol.com</a> to get their AWS GovCloud download links which should be whitelisted for most agencies.</p>
 </div>
 <div class="paragraph">
 <p>If you would were not aware that Neo4j Enterprise is open source just like it&#8217;s sibling 'Neo4j Community Edition', you can <a href="https://igovsol.com/downloads.html#neo4j-os-faqs" target="_blank">learn more here</a>.</p>
