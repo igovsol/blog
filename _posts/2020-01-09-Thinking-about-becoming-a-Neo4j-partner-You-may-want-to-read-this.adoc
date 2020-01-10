@@ -127,7 +127,9 @@ or implies a relationship *other than that of independent contractor*, nor bind 
 This has actually happened once already.
 
 Even though this partnership agreement is executed on behalf of the company signing it, Neo4j has shown that they are willing
-to attempt applying these terms outside of the company who signed the agreement.  If you or your board members have other companies
+to attempt applying these terms outside of the company who signed the agreement.  
+
+If you or your board members have other companies
 you may want to understand what they have done in the past.
 
 While you may prevail in court, you still have to deal with the legal headaches and costs associated with this type of behavior.
