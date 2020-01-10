@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 10 Jan 2020 20:59:22 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Thinking about becoming a Neo4j partner?  You may want to read this..]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[iGov Inc Neo4j Blog]]></title><description><![CDATA[A place where US federal government agencies can get current, unbiased Neo4j related information]]></description><link>http://blog.igovsol.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 10 Jan 2020 21:01:41 GMT</lastBuildDate><atom:link href="http://blog.igovsol.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Thinking about becoming a Neo4j partner?  You may want to read this..]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>In this post I will explain some important issues you must consider before becoming a Neo4j partner.</p>
@@ -148,7 +148,10 @@ or implies a relationship <strong>other than that of independent contractor</str
 </div>
 <div class="paragraph">
 <p>Even though this partnership agreement is executed on behalf of the company signing it, Neo4j has shown that they are willing
-to attempt applying these terms outside of the company who signed the agreement.  If you or your board members have other companies
+to attempt applying these terms outside of the company who signed the agreement.</p>
+</div>
+<div class="paragraph">
+<p>If you or your board members have other companies
 you may want to understand what they have done in the past.</p>
 </div>
 <div class="paragraph">
