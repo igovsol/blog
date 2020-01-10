@@ -31,11 +31,11 @@ It's important to understand what you are agreeing to, especially as Neo4j forks
 For example, in the US government, you may be at a severe disadvantage in terms of competitive bid pricing for projects involving Neo4j open source licenses and forks because of these limitations.
 
 Not only are the open source forks such as ONgDB already proving themselves in production in the federal government,
-there are well known and trusted contractors with a great deal of past performance supporting these open source distributions.  They are not subject to the terms discussed, and can therefore do not have to consider Neo4j expensive commercial licenses in their project bids.
+there are well known and trusted contractors with a great deal of past performance supporting these open source distributions.  They are not subject to the terms discussed and therefore do not have to consider Neo4j expensive commercial licenses in their project bids.
 
 ==  Terms to watch out for
 
-*1) The terms below prevent you from using Neo4j open source distributions during your partnership and 3 years after your stop being a partner.*
+*1) The terms below prevent you from using Neo4j open source distributions during your partnership and 3 years after you stop being a partner.*
 
 During your partnership and for 3 years after your partnership ends you can't:
 
@@ -122,11 +122,11 @@ or implies a relationship *other than that of independent contractor*, nor bind 
 ....
 
 
-*4) Neo4j Inc may try to enforce these terms on your other companies or partners if the 'partnership' is terminated, which can for any reason*
+*4) Neo4j Inc may try to enforce these terms on your other companies or partners if the 'partnership' is terminated, which they can do for any reason*
 
 This has actually happened once already.
 
-Even though this partnership agreement executed on behalf of the company signing it, Neo4j has shown that they are willing
+Even though this partnership agreement is executed on behalf of the company signing it, Neo4j has shown that they are willing
 to attempt applying these terms outside of the company who signed the agreement.  If you or your board members have other companies
 you may want to understand what they have done in the past.
 
@@ -138,7 +138,7 @@ While you may prevail in court, you still have to deal with the legal headaches 
 
 I've attempted to lay out some important considerations and information to assist you in making a more informed decision on becoming a Neo4j 'partner'.
 
-I'm not saying that being a 'partner' is a bad thing, my goal is to share the knowledge I've acquired with fellow entrepreneurs
+I'm not saying that being a 'partner' is a bad thing, my goal is to share the knowledge I've acquired with fellow entrepreneurs.
 
 
 
