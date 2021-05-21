@@ -1,70 +1,52 @@
 {{!< default}}
 
-<header id="header" class="header-narrow">
-				<div class="header-body">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-								<div class="header-logo">
-									<a href="index.html">
-											<img alt="iGov Inc." width="155" height="59" data-sticky-width="179" data-sticky-height="27" src="/images/logo.png">
-									</a>
-								</div>
-							</div>
-							<div class="header-column">
-								<div class="header-row">
-									<div class="header-nav">
-										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
-											<i class="fa fa-bars"></i>
-										</button>
-                    
-                   
-										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
-											<nav>
-                        							<ul class="nav nav-pills nav-main" id="mainMenu">
-                                        
-                        								<li class="">
-                        									<a  href="https://igovsol.com/index.html">
-                        										Home
-                        									</a>
-									
-                        								</li>
-								
-                        								<li class="">
-                        									<a href="https://igovsol.com/neo4j.html">Government Package for Neo4j </a>
-                        								</li>
-                       
-								
-                        								<li class="">
-                        									<a href="https://igovsol.com/about.html">About Us</a>
-                        								</li>
-								
-                        								<li class="">
-                        									<a href="https://igovsol.com/support.html">Support</a>
-                        								</li>
-                                        
-                        								<li class="">
-                        									<a href="https://igovsol.com/downloads.html">Neo4j Downloads</a>
-                        								</li>
-                                        
-                                        
-                        								<li class="active">
-                        									<a href="https://blog.igovsol.com">Blog</a>
-                        								</li>
-								
-							
-								
-                        							</ul>
-											
-											</nav>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
+<header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="https://igovsol.com/images/igov-logo.png" height="24" class="logo-light-mode" alt="">
+                    <img src="https://igovsol.com/images/igov-logo.png" height="24" class="logo-dark-mode" alt="">
+                </a>
+               
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+                
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu" id="navmenu-nav">
+                        <li class="has-submenu">
+                            <a href="https://igovsol.com/">Home</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="https://igovsol.com/#services">Focus</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="https://igovsol.com/#about">About Us</a>
+                        </li>
+                      
+                        <li class="has-submenu">
+                            <a href="https://igovsol.com/#contact">Contact</a>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a  href="javascript(void);">Blog</a>
+                        </li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
 
 {{> "loop"}}
 
